@@ -1,0 +1,3529 @@
+{
+  "jawshan": {
+    "name": "الجوشن الكبير",
+    "spokentitle": "الجَوْشَن الكَبِير",
+    "synonyms": [
+      "الجوشن",
+      "جوشن",
+      "الجوشن الكبير"
+    ],
+    "sounds": [
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/daa_aljwshn_alkbyr_bswt_abd_alhy_qnbr_DUA_E_JOSHAN_KABIR.mp3",
+        "reader": "عبدالحي آل قمبر",
+        "spokenreader": "عبدالحي آل قمبر",
+        "readerSynonyms": [
+          "عبدالحي آل قمبر"
+        ],
+        "image": "https://i.ytimg.com/vi/tFtBsTo_faQ/maxresdefault.jpg"
+      },
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/06-monasabat/09-ramadan/ad3iya/sahar/jawshan-kabir/parts/maitham-kazem/12.mp3",
+        "reader": "ميثم كاظم",
+        "spokenreader": "ميثم كاظم",
+        "readerSynonyms": [
+          "ميثم كاظم"
+        ],
+        "image": "https://i.ytimg.com/vi/k3vTdl-kEJc/maxresdefault.jpg"
+      },
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/daa_aljwshn_alkbyr_alhaj_hsyn_ghryb.mp3",
+        "reader": "حسين غريب",
+        "spokenreader": "حسين غريب",
+        "readerSynonyms": [
+          "حسين غريب"
+        ],
+        "image": "https://i.ytimg.com/vi/k3vTdl-kEJc/maxresdefault.jpg"
+      },
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/daa_aljwshn_alkbyr_almla_salh_alshykh_w_alhaj_aly_hmady.mp3",
+        "reader": "علي حمادي وصالح الشيخ",
+        "spokenreader": "علي حمادي وصالح الشيخ",
+        "readerSynonyms": [
+          "علي حمادي وصالح الشيخ"
+        ],
+        "image": "https://i.ytimg.com/vi/d7RcWLEjERI/sddefault.jpg"
+      },
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/daa_aljwshn_alkbyr_bswt_hzyn_alqare_alsyd_mhdy_myrdamad_Dua_Jawshen_Al_kabeer.mp3",
+        "reader": "مهدي ميردمان",
+        "spokenreader": "مهدي ميردمان",
+        "readerSynonyms": [
+          "مهدي ميردمان"
+        ],
+        "image": "https://i.ytimg.com/vi/k3vTdl-kEJc/maxresdefault.jpg"
+      }
+    ]
+  },
+  "kumail": {
+    "name": "دعاء كُمَيل",
+    "spokentitle": "دُعَاء كُمَيْل",
+    "synonyms": [
+      "كميل",
+      "كوميل",
+      "دعاء كوميل",
+      "دعاء كميل"
+    ],
+    "sounds": [
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/daa_kmyl_qhtan_albdyry.mp3",
+        "reader": "قحطان البديري",
+        "spokenreader": "قحطان البديري",
+        "readerSynonyms": [
+          "قحطان البديري"
+        ],
+        "image": "https://i.ytimg.com/vi/QjcI4m5K5Og/maxresdefault.jpg"
+      },
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/06-monasabat/15-aljom3a/doua/08-komail/yehya-hodroj.mp3",
+        "reader": "يحيى حدرج",
+        "spokenreader": "يحيى حدرج",
+        "readerSynonyms": [
+          "يحيى حدرج"
+        ],
+        "image": "https://i.ytimg.com/vi/QjcI4m5K5Og/maxresdefault.jpg"
+      },
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/06-monasabat/15-aljom3a/doua/08-komail/al-qambar.mp3",
+        "reader": "عبدالحي آل قمبر",
+        "spokenreader": "عبدالحي آل قمبر",
+        "readerSynonyms": [
+          "عبدالحي آل قمبر"
+        ],
+        "image": "https://i.ytimg.com/vi/QjcI4m5K5Og/maxresdefault.jpg"
+      },
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/06-monasabat/15-aljom3a/doua/08-komail/hsen-hmede.mp3",
+        "reader": "حسين حمادي",
+        "spokenreader": "حسين حمادي",
+        "readerSynonyms": [
+          "حسين حمادي"
+        ],
+        "image": "https://i.ytimg.com/vi/QjcI4m5K5Og/maxresdefault.jpg"
+      },
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/06-monasabat/15-aljom3a/doua/08-komail/ahmad-fetlawi.mp3",
+        "reader": "أحمد الفتلاوي",
+        "spokenreader": "أحمد الفتلاوي",
+        "readerSynonyms": [
+          "أحمد الفتلاوي"
+        ],
+        "image": "https://i.ytimg.com/vi/QjcI4m5K5Og/maxresdefault.jpg"
+      },
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/daa_kmyl_alhaj_mhmwd_aysa_abw_aymn.mp3",
+        "reader": "محمود عيسى",
+        "spokenreader": "محمود عيسى",
+        "readerSynonyms": [
+          "محمود عيسى"
+        ],
+        "image": "https://i.ytimg.com/vi/QjcI4m5K5Og/maxresdefault.jpg"
+      },
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/06-monasabat/15-aljom3a/doua/08-komail/hsen-ghrayeb.mp3",
+        "reader": "حسين غريب",
+        "spokenreader": "حسين غريب",
+        "readerSynonyms": [
+          "حسين غريب"
+        ],
+        "image": "https://i.ytimg.com/vi/QjcI4m5K5Og/maxresdefault.jpg"
+      },
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/daa_kmyl_bswt_baqr_almqdsy.mp3",
+        "reader": "الشيخ باقر المقدسي",
+        "spokenreader": "الشيخ باقر المقدسي",
+        "readerSynonyms": [
+          "الشيخ باقر المقدسي"
+        ],
+        "image": "https://i.ytimg.com/vi/QjcI4m5K5Og/maxresdefault.jpg"
+      },
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/daa_kmyl_bn_zyad_rd_alqary_mrtda_qrysh_h.mp3",
+        "reader": "مرتضى قريش",
+        "spokenreader": "مرتضى قريش",
+        "readerSynonyms": [
+          "مرتضى قريش"
+        ],
+        "image": "https://i.ytimg.com/vi/QjcI4m5K5Og/maxresdefault.jpg"
+      }
+    ]
+  },
+  "تعقيب_صلاة_الصبح": {
+    "name": "تعقيب صلاة الصبح",
+    "spokentitle": "تَعْقِيب صَلَاة الصُّبْح",
+    "synonyms": [
+      "صلاة الصبح",
+      "تعقيب الصبح",
+      "صلاة الصباح",
+      "تعقيب الصباح",
+      "الصبح",
+      "الصباح"
+    ],
+    "sounds": [
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/02-ad3iya/ta3qibat/01-sobh/abuzar-helwaji.mp3",
+        "reader": "أباذر الحلواجي",
+        "spokenreader": "أباذر الحلواجي",
+        "readerSynonyms": [
+          "أباذر الحلواجي"
+        ],
+        "image": "https://i.ytimg.com/vi/aBeGSXegnzA/hq720.jpg"
+      },
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/02-ad3iya/ta3qibat/01-sobh/mustafa-kinani.mp3",
+        "reader": "مصطفى الكناني",
+        "spokenreader": "مصطفى الكناني",
+        "readerSynonyms": [
+          "مصطفى الكناني"
+        ],
+        "image": "https://i.ytimg.com/vi/aBeGSXegnzA/hq720.jpg"
+      }
+    ]
+  },
+  "تعقيب_صلاة_الظهر": {
+    "name": "تعقيب صلاة الظهر",
+    "spokentitle": "تَعْقِيب صَلَاة الظُّهْر",
+    "synonyms": [
+      "تعقيب الظهر",
+      "صلاة الظهر",
+      "صلاة الظو هر",
+      "الظهر",
+      "الظوهر",
+      "تعقيب الظوهر"
+    ],
+    "sounds": [
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/02-ad3iya/ta3qibat/02-zohr/abuzar-helwaji.mp3",
+        "reader": "أباذر الحلواجي",
+        "spokenreader": "أباذر الحلواجي",
+        "readerSynonyms": [
+          "أباذر الحلواجي"
+        ],
+        "image": "https://i.ytimg.com/vi/aBeGSXegnzA/hq720.jpg"
+      },
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/02-ad3iya/ta3qibat/02-zohr/hasan-fakih.mp3",
+        "reader": "حسن فقيه",
+        "spokenreader": "حسن فقيه",
+        "readerSynonyms": [
+          "حسن فقيه"
+        ],
+        "image": "https://i.ytimg.com/vi/xPyk8jh0I8A/mqdefault.jpg"
+      }
+    ]
+  },
+  "تعقيب_صلاة_المغرب": {
+    "name": "تعقيب صلاة المغرب",
+    "spokentitle": "تَعْقِيب صَلَاة المَغْرِب",
+    "synonyms": [
+      "صلاة المغرب",
+      "تعقيب المغرب",
+      "المغرب"
+    ],
+    "sounds": [
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/02-ad3iya/ta3qibat/04-maghreb/helwaji.mp3",
+        "reader": "أباذر الحلواجي",
+        "spokenreader": "أباذر الحلواجي",
+        "readerSynonyms": [
+          "أباذر الحلواجي"
+        ],
+        "image": "https://i.ytimg.com/vi/aBeGSXegnzA/hq720.jpg"
+      },
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/02-ad3iya/ta3qibat/04-maghreb/hasan-bahmad.mp3",
+        "reader": "حسن بحمد",
+        "spokenreader": "حسن بحمد",
+        "readerSynonyms": [
+          "حسن بحمد"
+        ],
+        "image": "https://i.ytimg.com/vi/aBeGSXegnzA/hq720.jpg"
+      }
+    ]
+  },
+  "الأمان": {
+    "name": "دعاء الأمان",
+    "spokentitle": "دُعَاء الأَمَان",
+    "synonyms": [
+      "الأمان",
+      "دعاء الامان"
+    ],
+    "sounds": [
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/daa_alaman_alhaj_hsyn_ghryb.mp3",
+        "reader": "حسين غريب",
+        "spokenreader": "حسين غريب",
+        "readerSynonyms": [
+          "حسين غريب"
+        ],
+        "image": "https://i.ytimg.com/vi/_cMnC6nTLLU/maxresdefault.jpg"
+      },
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/daa_alamn_aly_fany.mp3",
+        "reader": "علي فاني",
+        "spokenreader": "علي فاني",
+        "readerSynonyms": [
+          "علي فاني"
+        ],
+        "image": "https://i.ytimg.com/vi/_cMnC6nTLLU/maxresdefault.jpg"
+      },
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/daa_alamn_bswt_alradwd_jma_hamd.mp3",
+        "reader": "جمعة حامد",
+        "spokenreader": "جمعة حامد",
+        "readerSynonyms": [
+          "جمعة حامد"
+        ],
+        "image": "https://i.ytimg.com/vi/_cMnC6nTLLU/maxresdefault.jpg"
+      },
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/daa_alamn_ldfa_albla_wlkhwf_alfqr_wdyq_alsdr_abadhr_alhlwajy_Dua_Al_Amn.mp3",
+        "reader": "أباذر الحلواجي",
+        "spokenreader": "أباذر الحلواجي",
+        "readerSynonyms": [
+          "أباذر الحلواجي"
+        ],
+        "image": "https://i.ytimg.com/vi/_cMnC6nTLLU/maxresdefault.jpg"
+      }
+    ]
+  },
+  "دعاء_الإفتتاح": {
+    "name": "دعاء الإفتتاح",
+    "spokentitle": "دُعَاء الإِفْتِتَاح",
+    "synonyms": [
+      "الافتتاح",
+      "الإفتتاح",
+      "دعاء الافتتاح",
+      "دعاء الإفتتاح"
+    ],
+    "sounds": [
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/daa_alafttah_bswt_yasr_kmal.mp3",
+        "reader": "ياسر كمال",
+        "spokenreader": "ياسر كمال",
+        "readerSynonyms": [
+          "ياسر كمال"
+        ],
+        "image": "https://i.ytimg.com/vi/tWlPwD-vcMw/maxresdefault.jpg"
+      },
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/Dua_Iftitah_Noureddine_Alkathemy_daa_alifttah_nwraldyn_alkathmy.mp3",
+        "reader": "رضا نور الدين",
+        "spokenreader": "رضا نور الدين",
+        "readerSynonyms": [
+          "رضا نور الدين"
+        ],
+        "image": "https://i.ytimg.com/vi/tWlPwD-vcMw/maxresdefault.jpg"
+      },
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/06-monasabat/09-ramadan/ad3iya/layliya/eftitah/mortaza-koraysh.mp3",
+        "reader": "مرتضى قريش",
+        "spokenreader": "مرتضى قريش",
+        "readerSynonyms": [
+          "مرتضى قريش"
+        ],
+        "image": "https://i.ytimg.com/vi/tWlPwD-vcMw/maxresdefault.jpg"
+      },
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/daa_alafttah_alhaj_mhmwd_aysa_abw_aymn.mp3",
+        "reader": "محمود عيسى",
+        "spokenreader": "محمود عيسى",
+        "readerSynonyms": [
+          "محمود عيسى"
+        ],
+        "image": "https://i.ytimg.com/vi/tWlPwD-vcMw/maxresdefault.jpg"
+      },
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/daa_alifttah_alkhtyb_alhsyny_abdalhy_aal_qmbr_Dua_el_eftetah.mp3",
+        "reader": "عبدالحي آل قمبر",
+        "spokenreader": "عبدالحي آل قمبر",
+        "readerSynonyms": [
+          "عبدالحي آل قمبر"
+        ],
+        "image": "https://i.ytimg.com/vi/tWlPwD-vcMw/maxresdefault.jpg"
+      },
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/Dua_Iftitah_AR_SUB_Ali_Fani_ala_fana_daa_alifttah_arby.mp3",
+        "reader": "علي فاني",
+        "spokenreader": "علي فاني",
+        "readerSynonyms": [
+          "علي فاني"
+        ],
+        "image": "https://i.ytimg.com/vi/OsTPnPIiWlY/maxresdefault.jpg"
+      },
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/daa_alafttah_altsjyl_alqdym_alhaj_abadhr_alhlwajy_Dua_el_Eftitah.mp3",
+        "reader": "أباذر الحلواجي",
+        "spokenreader": "أباذر الحلواجي",
+        "readerSynonyms": [
+          "أباذر الحلواجي"
+        ],
+        "image": "https://i.ytimg.com/vi/NFVqvewgnM0/maxresdefault.jpg"
+      },
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/daa_altwsl_alhaj_hsyn_ghryb.mp3",
+        "reader": "حسين غريب",
+        "spokenreader": "حسين غريب",
+        "readerSynonyms": [
+          "حسين غريب"
+        ],
+        "image": "https://i.ytimg.com/vi/x3Ro2OA6NvM/hq720.jpg?sqp=-oaymwE7CK4FEIIDSFryq4qpAy0IARUAAAAAGAElAADIQj0AgKJD8AEB-AH-CYAC0AWKAgwIABABGGUgXShXMA8=&rs=AOn4CLAkM2auwQMhxvs0GX21T75gJYnQlg"
+      }
+    ]
+  },
+  "دعاء_التوبة": {
+    "name": "دعاء التوبة",
+    "spokentitle": "دُعَاء التَّوْبَة",
+    "synonyms": [
+      "دعاء التوبة",
+      "التوبة"
+    ],
+    "sounds": [
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/02-ad3iya/sahifa-sajadiya/tawba/housien-ghrayeb.mp3",
+        "reader": "حسين غريب",
+        "spokenreader": "حسين غريب",
+        "readerSynonyms": [
+          "حسين غريب"
+        ],
+        "image": "https://i.ytimg.com/vi/wLzBj3s5xVQ/hq720.jpg"
+      },
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/02-ad3iya/sahifa-sajadiya/tawba/maitham-kazem.mp3",
+        "reader": "ميثم كاظم",
+        "spokenreader": "ميثم كاظم",
+        "readerSynonyms": [
+          "ميثم كاظم"
+        ],
+        "image": "https://i.ytimg.com/vi/wLzBj3s5xVQ/hq720.jpg"
+      },
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/02-ad3iya/sahifa-sajadiya/tawba/mhmod-issa.mp3",
+        "reader": "محمود عيسى",
+        "spokenreader": "محمود عيسى",
+        "readerSynonyms": [
+          "محمود عيسى"
+        ],
+        "image": "https://i.ytimg.com/vi/wLzBj3s5xVQ/hq720.jpg"
+      },
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/02-ad3iya/sahifa-sajadiya/tawba/ali-slim.mp3",
+        "reader": "علي سليم",
+        "spokenreader": "علي سليم",
+        "readerSynonyms": [
+          "علي سليم"
+        ],
+        "image": "https://i.ytimg.com/vi/wLzBj3s5xVQ/hq720.jpg"
+      }
+    ]
+  },
+  "دعاء_التوسل": {
+    "name": "دعاء التوسل",
+    "spokentitle": "دُعَاء التَّوَسُّل",
+    "synonyms": [
+      "التوسل",
+      "توسل",
+      "دعاء توسل",
+      "تّوسُّل",
+      "التّوسُّل",
+      "تّوَسُّل",
+      "التّوَسُّل",
+      "دعاء التّوَسُّل",
+      "دوعاء التّوَسُّل"
+    ],
+    "sounds": [
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/daa_altwsl_alhaj_hsyn_ghryb.mp3",
+        "reader": "حسين غريب",
+        "spokenreader": "حسين غريب",
+        "readerSynonyms": [
+          "حسين غريب"
+        ],
+        "image": "https://i.ytimg.com/vi/BjIi5ldUTBQ/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLB6b28hDIEZhfM9Gfx7L0GGahA9Vg"
+      },
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/daa_altwsl_alshykh_shbr_mal.mp3",
+        "reader": "شبر معله",
+        "spokenreader": "شبر معله",
+        "readerSynonyms": [
+          "شبر معله"
+        ],
+        "image": "https://i.ytimg.com/vi/BjIi5ldUTBQ/hq720.jpg"
+      },
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/02-ad3iya/mashhoura/tawasol/maitham-moti3i.mp3",
+        "reader": "ميثم مطيعي",
+        "spokenreader": "ميثم مطيعي",
+        "readerSynonyms": [
+          "ميثم مطيعي"
+        ],
+        "image": "https://i.ytimg.com/vi/BjIi5ldUTBQ/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLB6b28hDIEZhfM9Gfx7L0GGahA9Vg"
+      },
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/02-ad3iya/mashhoura/tawasol/helwaji.mp3",
+        "reader": "أباذر الحلواجي",
+        "spokenreader": "أباذر الحلواجي",
+        "readerSynonyms": [
+          "أباذر الحلواجي"
+        ],
+        "image": "https://i.ytimg.com/vi/BjIi5ldUTBQ/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLB6b28hDIEZhfM9Gfx7L0GGahA9Vg"
+      },
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/02-ad3iya/mashhoura/tawasol/amer-kazemi.mp3",
+        "reader": "عامر الكاظمي",
+        "spokenreader": "عامر الكاظمي",
+        "readerSynonyms": [
+          "عامر الكاظمي"
+        ],
+        "image": "https://i.ytimg.com/vi/BjIi5ldUTBQ/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLB6b28hDIEZhfM9Gfx7L0GGahA9Vg"
+      },
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/daa_altwsl_jhad_alhdad.mp3",
+        "reader": "جهاد الحداد",
+        "spokenreader": "جهاد الحداد",
+        "readerSynonyms": [
+          "جهاد الحداد"
+        ],
+        "image": "https://i.ytimg.com/vi/BjIi5ldUTBQ/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLB6b28hDIEZhfM9Gfx7L0GGahA9Vg"
+      },
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/daa_altwsl_mrtda_qrysh.mp3",
+        "reader": "مرتضى قريش",
+        "spokenreader": "مرتضى قريش",
+        "readerSynonyms": [
+          "مرتضى قريش"
+        ],
+        "image": "https://i.ytimg.com/vi/BjIi5ldUTBQ/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLB6b28hDIEZhfM9Gfx7L0GGahA9Vg"
+      },
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/daa_twsl_daa_altwsl_mhsn_frhmnd_aazad_Dua_Tawassul_Mohsen_Farahmand_Azad.mp3",
+        "reader": "محسن فرهمند",
+        "spokenreader": "محسن فرهمند",
+        "readerSynonyms": [
+          "محسن فرهمند"
+        ],
+        "image": "https://i.ytimg.com/vi/BjIi5ldUTBQ/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLB6b28hDIEZhfM9Gfx7L0GGahA9Vg"
+      },
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/Dua_Tawassul_AR_EN_SUB_K_Ali_Fani_al_fan_daa_altwsl.mp3",
+        "reader": "علي فاني",
+        "spokenreader": "علي فاني",
+        "readerSynonyms": [
+          "علي فاني"
+        ],
+        "image": "https://i.ytimg.com/vi/BjIi5ldUTBQ/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLB6b28hDIEZhfM9Gfx7L0GGahA9Vg"
+      }
+    ]
+  },
+  "دعاء_السمات": {
+    "name": "دعاء السمات",
+    "spokentitle": "دُعَاء السِّمَات",
+    "synonyms": [
+      "السمات",
+      "ألسمات",
+      "دعاء السمات"
+    ],
+    "sounds": [
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/06-monasabat/15-aljom3a/doua/03-alsimat/hsen-ghrayeb.mp3",
+        "reader": "حسين غريب",
+        "spokenreader": "حسين غريب",
+        "readerSynonyms": [
+          "حسين غريب"
+        ],
+        "image": "https://almaaref.ch/wp-content/uploads/2020/03/%D8%AF%D8%B9%D8%A7%D8%A1-%D8%A7%D9%84%D8%B3%D9%85%D8%A7%D8%AA.jpg"
+      },
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/06-monasabat/15-aljom3a/doua/03-alsimat/maitham-tammar.mp3",
+        "reader": "مَيثَم التّمّار",
+        "spokenreader": "مَيثَم التّمّار",
+        "readerSynonyms": [
+          "مَيثَم التّمّار"
+        ],
+        "image": "https://almaaref.ch/wp-content/uploads/2020/03/%D8%AF%D8%B9%D8%A7%D8%A1-%D8%A7%D9%84%D8%B3%D9%85%D8%A7%D8%AA.jpg"
+      }
+    ]
+  },
+  "دعاء_الصباح": {
+    "name": "دعاء الصباح",
+    "spokentitle": "دُعَاء الصَّبَاح",
+    "synonyms": [
+      "الصباح",
+      "صابح",
+      "دعاء صباح"
+    ],
+    "sounds": [
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/02-ad3iya/mashhoura/sabah/hsen-lawati.mp3",
+        "reader": "حسين لواتي",
+        "spokenreader": "حسين لواتي",
+        "readerSynonyms": [
+          "حسين لواتي"
+        ],
+        "image": "https://i.ytimg.com/vi/n3YRz_AcYFM/maxresdefault.jpg"
+      },
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/02-ad3iya/mashhoura/sabah/amir-ka3bi.mp3",
+        "reader": "أمير الكعبي",
+        "spokenreader": "أمير الكعبي",
+        "readerSynonyms": [
+          "أمير الكعبي"
+        ],
+        "image": "https://i.ytimg.com/vi/4Q59ClgzrLQ/maxresdefault.jpg"
+      },
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/02-ad3iya/mashhoura/sabah/amer-kazemi.mp3",
+        "reader": "عامر الكاظمي",
+        "spokenreader": "عامر الكاظمي",
+        "readerSynonyms": [
+          "عامر الكاظمي"
+        ],
+        "image": "https://i.ytimg.com/vi/_7Uz-pi8EnA/maxresdefault.jpg"
+      },
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/02-ad3iya/mashhoura/sabah/mortaza-quraysh.mp3",
+        "reader": "مرتضى قريش",
+        "spokenreader": "مرتضى قريش",
+        "readerSynonyms": [
+          "مرتضى قريش"
+        ],
+        "image": "https://i.ytimg.com/vi/IdpbixmtzXA/maxresdefault.jpg"
+      },
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/02-ad3iya/mashhoura/sabah/haidar-saghir.mp3",
+        "reader": "حيدر الصغير",
+        "spokenreader": "حيدر الصغير",
+        "readerSynonyms": [
+          "حيدر الصغير"
+        ],
+        "image": "https://i.ytimg.com/vi/aVxzctQ1KG4/maxresdefault.jpg"
+      },
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/02-ad3iya/mashhoura/sabah/ismail-hijazi.mp3",
+        "reader": "اسماعيل حجازي",
+        "spokenreader": "اسماعيل حجازي",
+        "readerSynonyms": [
+          "اسماعيل حجازي"
+        ],
+        "image": "https://i.ytimg.com/vi/bXOWxfApUPA/sddefault.jpg?sqp=-oaymwEmCIAFEOAD8quKqQMa8AEB-AH-BIAC6AKKAgwIABABGFAgWShlMA8=&rs=AOn4CLALb6UvYyA0K_zJrh2Yh08IJITXBA"
+      },
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/02-ad3iya/mashhoura/sabah/shubbar.mp3",
+        "reader": "شبر معله",
+        "spokenreader": "شبر معله",
+        "readerSynonyms": [
+          "شبر معله"
+        ],
+        "image": "https://i.ytimg.com/vi/ao1QSwS6AVw/maxresdefault.jpg"
+      },
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/02-ad3iya/mashhoura/sabah/hsen-ghrayeb.mp3",
+        "reader": "حسين غريب",
+        "spokenreader": "حسين غريب",
+        "readerSynonyms": [
+          "حسين غريب"
+        ],
+        "image": "https://i.ytimg.com/vi/poOnpuwqRbs/maxresdefault.jpg"
+      },
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/02-ad3iya/mashhoura/sabah/hsen-ghrayeb.mp3",
+        "reader": "محمود عيسى",
+        "spokenreader": "محمود عيسى",
+        "readerSynonyms": [
+          "محمود عيسى"
+        ],
+        "image": "https://i.ytimg.com/vi/gahuvhx9F8w/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBI1p_08H_Rdj9ux6GhqaFD3AHR4A"
+      },
+      {
+        "url": "https://sawtalhoda.com/mediasave.php?id=172&type=audio&filename=audio/uploaded/files/maktaba_iza3ia/02-ad3iya/mashhoura/sabah/maitham-tammar.mp3",
+        "reader": "مَيثَم التّمّار",
+        "spokenreader": "مَيثَم التّمّار",
+        "readerSynonyms": [
+          "مَيثَم التّمّار"
+        ],
+        "image": "https://i.ytimg.com/vi/ejn6Uc-GpZw/maxresdefault.jpg"
+      },
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/abather_+Duaa+Al+Sabah--2017-04-16.mp3",
+        "reader": "أباذر الحلواجي",
+        "spokenreader": "أباذر الحلواجي",
+        "readerSynonyms": [
+          "أباذر الحلواجي"
+        ],
+        "image": "https://i.ytimg.com/vi/kbjk_XnIVXc/maxresdefault.jpg"
+      },
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/02-ad3iya/mashhoura/sabah/ahmad-fetlawi.mp3",
+        "reader": "أحمد الفتلاوي",
+        "spokenreader": "أحمد الفتلاوي",
+        "readerSynonyms": [
+          "أحمد الفتلاوي"
+        ],
+        "image": "https://i.ytimg.com/vi/0yJSkJUXEEg/sddefault.jpg"
+      },
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/02-ad3iya/mashhoura/sabah/amer-kinani.mp3",
+        "reader": "عمار الكناني",
+        "spokenreader": "عمار الكناني",
+        "readerSynonyms": [
+          "عمار الكناني"
+        ],
+        "image": "https://i.ytimg.com/vi/_32GA119t94/maxresdefault.jpg"
+      }
+    ]
+  },
+  "دعاء_العديلة": {
+    "name": "دعاء العديلة",
+    "spokentitle": "دُعَاء العَدِيلَة",
+    "synonyms": [
+      "العديلة",
+      "العديله",
+      "دعاء العديله",
+      "عديلة",
+      "عديله"
+    ],
+    "sounds": [
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/02-ad3iya/mashhoura/adila/hsen-ghrayeb.mp3",
+        "reader": "حسين غريب",
+        "spokenreader": "حسين غريب",
+        "readerSynonyms": [
+          "حسين غريب"
+        ],
+        "image": "https://i.ytimg.com/vi/6VcgpTkMrAA/maxresdefault.jpg"
+      },
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/02-ad3iya/mashhoura/adila/ali-slim.mp3",
+        "reader": "علي سليم",
+        "spokenreader": "علي سليم",
+        "readerSynonyms": [
+          "علي سليم"
+        ],
+        "image": "https://i.ytimg.com/vi/6VcgpTkMrAA/maxresdefault.jpg"
+      }
+    ]
+  },
+  "دعاء_العشرات": {
+    "name": "دعاء العشرات",
+    "spokentitle": "دُعَاء العَشَرَات",
+    "synonyms": [
+      "العشرات",
+      "دعاء عشرات",
+      "عشرات"
+    ],
+    "sounds": [
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/02-ad3iya/mashhoura/asharat/maitham-kazem.mp3",
+        "reader": "ميثم كاظم",
+        "spokenreader": "ميثم كاظم",
+        "readerSynonyms": [
+          "ميثم كاظم"
+        ],
+        "image": "https://i.ytimg.com/vi/pduFHxqeZjk/sddefault.jpg"
+      },
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/02-ad3iya/mashhoura/asharat/hsen-ghrayeb.mp3",
+        "reader": "حسين غريب",
+        "spokenreader": "حسين غريب",
+        "readerSynonyms": [
+          "حسين غريب"
+        ],
+        "image": "https://i.ytimg.com/vi/pduFHxqeZjk/sddefault.jpg"
+      }
+    ]
+  },
+  "دعاء_المجير": {
+    "name": "دعاء المجير",
+    "spokentitle": "دُعَاء المُجِير",
+    "synonyms": [
+      "المجير",
+      "مجير"
+    ],
+    "sounds": [
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/02-ad3iya/mashhoura/mojeer/saleh-sheikh.mp3",
+        "reader": "صالح الشيخ",
+        "spokenreader": "صالح الشيخ",
+        "readerSynonyms": [
+          "صالح الشيخ"
+        ],
+        "image": "https://i.ytimg.com/vi/WqYYqeN7u1g/maxresdefault.jpg"
+      },
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/02-ad3iya/mashhoura/mojeer/hsen-ghrayeb.mp3",
+        "reader": "حسين غريب",
+        "spokenreader": "حسين غريب",
+        "readerSynonyms": [
+          "حسين غريب"
+        ],
+        "image": "https://i.ytimg.com/vi/k6Uc0VaQHxM/hq720.jpg"
+      },
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/02-ad3iya/mashhoura/mojeer/amer-kazemi.mp3",
+        "reader": "عامر الكاظمي",
+        "spokenreader": "عامر الكاظمي",
+        "readerSynonyms": [
+          "عامر الكاظمي"
+        ],
+        "image": "https://i.ytimg.com/vi/Bvxv9Rkyc2s/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AHUBoAC4AOKAgwIABABGEUgZSgPMA8=&rs=AOn4CLAa0FiTa9t6P0O4zILgSAxGTYGDJQ"
+      }
+    ]
+  },
+  "دعاء_المشلول": {
+    "name": "دعاء المشلول",
+    "spokentitle": "دُعَاء المَشْلُول",
+    "synonyms": [
+      "المشلول",
+      "مشلول",
+      "دعاء مشلول"
+    ],
+    "sounds": [
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/daa_almshlwl_almla_abd_alhy_qmbr_Dua_Mashlool_Abdulhai_Qambar.mp3",
+        "reader": "عبدالحي آل قمبر",
+        "spokenreader": "عبدالحي آل قمبر",
+        "readerSynonyms": [
+          "عبدالحي آل قمبر"
+        ],
+        "image": "https://ar.al-shia.org/wp-content/uploads/2018/11/296942.jpg"
+      },
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/02-ad3iya/mashhoura/mashloul/hsen-ghrayeb.mp3",
+        "reader": "حسين غريب",
+        "spokenreader": "حسين غريب",
+        "readerSynonyms": [
+          "حسين غريب"
+        ],
+        "image": "https://i.ytimg.com/vi/pyAYuVVvcM8/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDbdlx9ksejjUMNfH1TpN28JtJ7Cg"
+      },
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/daa_almshlwl_aly_hmady_lqda_alhwaej_walfrj_mn_alhmwm_DUA_MASHLOOL.mp3",
+        "reader": "علي حمادي",
+        "spokenreader": "علي حمادي",
+        "readerSynonyms": [
+          "علي حمادي"
+        ],
+        "image": "https://i.ytimg.com/vi/py2TCWIJyV8/hq720.jpg"
+      },
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/daa_almshlwl_salh_alshykh_DUA_ALMASHLOOL.mp3",
+        "reader": "صالح الشيخ",
+        "spokenreader": "صالح الشيخ",
+        "readerSynonyms": [
+          "صالح الشيخ"
+        ],
+        "image": "https://i.ytimg.com/vi/py2TCWIJyV8/hq720.jpg"
+      },
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/daa_almshlwl_bswt_alqare_alhaj_aamr_alkathmy.mp3",
+        "reader": "عامر الكاظمي",
+        "spokenreader": "عامر الكاظمي",
+        "readerSynonyms": [
+          "عامر الكاظمي"
+        ],
+        "image": "https://i.ytimg.com/vi/BfdP9gA9dok/sddefault.jpg"
+      }
+    ]
+  },
+  "yaoddaty": {
+    "name": "دعاء ياعدتي",
+    "spokentitle": "دُعَاء يَا عُدَّتِي",
+    "synonyms": [
+      "عدتي",
+      "ياعدتي",
+      "دوعاء ياعدتي",
+      "دعاء عدتي"
+    ],
+    "sounds": [
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/ya_adty_mhmd_dawd.mp3",
+        "reader": "محمد داوود",
+        "spokenreader": "محمد داوود",
+        "readerSynonyms": [
+          "محمد داوود"
+        ],
+        "image": "https://daniapp.org/sawt_alhuda3.png"
+      },
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/daa_almshlwl_salh_alshykh_DUA_ALMASHLOOL.mp3",
+        "reader": "عبدالحي آل قمبر",
+        "spokenreader": "عبدالحي آل قمبر",
+        "readerSynonyms": [
+          "عبدالحي آل قمبر"
+        ],
+        "image": "https://i.ytimg.com/vi/_z5-NUMUdLI/maxresdefault.jpg"
+      },
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/daa_ya_adty_bswt_alshykh_hsn_fqyh.mp3",
+        "reader": "حسن فقيه",
+        "spokenreader": "حسن فقيه",
+        "readerSynonyms": [
+          "حسن فقيه"
+        ],
+        "image": "https://i.ytimg.com/vi/FaXrkohoGuI/maxresdefault.jpg"
+      }
+    ]
+  },
+  "دعاء_يستشير": {
+    "name": "دعاء يستشير",
+    "spokentitle": "دُعَاء يَسْتَشِير",
+    "synonyms": [
+      "يستشير",
+      "مستشير",
+      "دعاء مستشير"
+    ],
+    "sounds": [
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/02-ad3iya/mashhoura/yastashir/mhmd-attar.mp3",
+        "reader": "محمد العطار",
+        "spokenreader": "محمد العطار",
+        "readerSynonyms": [
+          "محمد العطار"
+        ],
+        "image": "https://i.ytimg.com/vi/P-JmgMNqNL4/maxresdefault.jpg"
+      },
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/02-ad3iya/mashhoura/yastashir/hsen-ghrayeb.mp3",
+        "reader": "حسين غريب",
+        "spokenreader": "حسين غريب",
+        "readerSynonyms": [
+          "حسين غريب"
+        ],
+        "image": "https://i.ytimg.com/vi/P-JmgMNqNL4/maxresdefault.jpg"
+      }
+    ]
+  },
+  "دعاء_يوم_الأحد": {
+    "name": "دعاء يوم الأحد",
+    "spokentitle": "دُعَاء يَوْم الأَحَد",
+    "synonyms": [
+      "دعاء الاحد",
+      "دعاء الأحد",
+      "يوم الأحد",
+      "دعاء يوم الاحد",
+      "دوعاء الأحد"
+    ],
+    "sounds": [
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/02-ad3iya/ayam/07-doua-sunday/saleh-sheikh.mp3",
+        "reader": "صالح الشيخ",
+        "spokenreader": "صالح الشيخ",
+        "readerSynonyms": [
+          "صالح الشيخ"
+        ],
+        "image": "https://i.ytimg.com/vi/t7c8KJeGzg8/hqdefault.jpg"
+      },
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/alkhtyb_alhsyny_abdalhy_aal_qmbr_daa_ywm_alahd_alkhtyb_alhsyny_abdalhy_aal_qmbr.mp3",
+        "reader": "عبدالحي آل قمبر",
+        "spokenreader": "عبدالحي آل قمبر",
+        "readerSynonyms": [
+          "عبدالحي آل قمبر"
+        ],
+        "image": "https://i.ytimg.com/vi/t7c8KJeGzg8/hqdefault.jpg"
+      }
+    ]
+  },
+  "دعاء_يوم_الأربعاء": {
+    "name": "دعاء يوم الأربعاء",
+    "spokentitle": "دُعَاء يَوْم الأَرْبِعَاء",
+    "synonyms": [
+      "الاربعاء",
+      "يوم الأربعاء",
+      "يوم الاربعاء",
+      "دعاء الأربعاء",
+      "دعاء الاربعاء",
+      "دعاء يوم الاربعاء"
+    ],
+    "sounds": [
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/02-ad3iya/ayam/03-doua-wednesday/shubbar.mp3",
+        "reader": "شبر معله",
+        "spokenreader": "شبر معله",
+        "readerSynonyms": [
+          "شبر معله"
+        ],
+        "image": "https://i.ytimg.com/vi/8xgO2EAFfz4/hqdefault.jpg"
+      },
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/02-ad3iya/ayam/03-doua-wednesday/saleh-sheikh.mp3",
+        "reader": "صالح الشيخ",
+        "spokenreader": "صالح الشيخ",
+        "readerSynonyms": [
+          "صالح الشيخ"
+        ],
+        "image": "https://i.ytimg.com/vi/8xgO2EAFfz4/hqdefault.jpg"
+      },
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/02-ad3iya/ayam/03-doua-wednesday/reza-nourdien.mp3",
+        "reader": "رضا نور الدين",
+        "spokenreader": "رضا نور الدين",
+        "readerSynonyms": [
+          "رضا نور الدين"
+        ],
+        "image": "https://i.ytimg.com/vi/8xgO2EAFfz4/hqdefault.jpg"
+      },
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/02-ad3iya/ayam/03-doua-wednesday/ali-slim.mp3",
+        "reader": "علي سليم",
+        "spokenreader": "علي سليم",
+        "readerSynonyms": [
+          "علي سليم"
+        ],
+        "image": "https://i.ytimg.com/vi/8xgO2EAFfz4/hqdefault.jpg"
+      },
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/02-ad3iya/ayam/03-doua-wednesday/mhmod-issa.mp3",
+        "reader": "محمود عيسى",
+        "spokenreader": "محمود عيسى",
+        "readerSynonyms": [
+          "محمود عيسى"
+        ],
+        "image": "https://i.ytimg.com/vi/8xgO2EAFfz4/hqdefault.jpg"
+      }
+    ]
+  },
+  "دعاء_يوم_الاثنين": {
+    "name": "دعاء يوم الاثنين",
+    "spokentitle": "دُعَاء يَوْم الإِثْنَيْن",
+    "synonyms": [
+      "الأثنين",
+      "دعاء الأثنين",
+      "دعاء يوم الأثنين",
+      "يوم الأثنين",
+      "يوم الاثنين",
+      "الاثنين",
+      "دعاء الاثنين"
+    ],
+    "sounds": [
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/02-ad3iya/ayam/01-doua-monday/shubbar.mp3",
+        "reader": "شبر معله",
+        "spokenreader": "شبر معله",
+        "readerSynonyms": [
+          "شبر معله"
+        ],
+        "image": "https://i.ytimg.com/vi/ojdyhoAbLCs/hqdefault.jpg"
+      },
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/02-ad3iya/ayam/01-doua-monday/saleh-sheikh.mp3",
+        "reader": "صالح الشيخ",
+        "spokenreader": "صالح الشيخ",
+        "readerSynonyms": [
+          "صالح الشيخ"
+        ],
+        "image": "https://i.ytimg.com/vi/ojdyhoAbLCs/hqdefault.jpg"
+      },
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/02-ad3iya/ayam/01-doua-monday/reza-nourdine.mp3",
+        "reader": "رضا نور الدين",
+        "spokenreader": "رضا نور الدين",
+        "readerSynonyms": [
+          "رضا نور الدين"
+        ],
+        "image": "https://i.ytimg.com/vi/ojdyhoAbLCs/hqdefault.jpg"
+      },
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/02-ad3iya/ayam/01-doua-monday/ali-slim.mp3",
+        "reader": "علي سليم",
+        "spokenreader": "علي سليم",
+        "readerSynonyms": [
+          "علي سليم"
+        ],
+        "image": "https://i.ytimg.com/vi/ojdyhoAbLCs/hqdefault.jpg"
+      }
+    ]
+  },
+  "دعاء_يوم_الثلاثاء": {
+    "name": "دعاء يوم الثلاثاء",
+    "spokentitle": "دُعَاء يَوْم الثُّلَاثَاء",
+    "synonyms": [
+      "دعاء يوم الثلاثا",
+      "دعاء يوم الثلثاء",
+      "دعاء يوم الثلثا",
+      "يوم الثلاثاء",
+      "يوم الثلاثا",
+      "الثلاثاء",
+      "الثلاثا",
+      "الثلثاء"
+    ],
+    "sounds": [
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/02-ad3iya/ayam/02-doua-tuesday/reza-nourdein.mp3",
+        "reader": "رضا نور الدين",
+        "spokenreader": "رضا نور الدين",
+        "readerSynonyms": [
+          "رضا نور الدين"
+        ],
+        "image": "https://i.ytimg.com/vi/txrF_ivw9Ro/hqdefault.jpg"
+      },
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/02-ad3iya/ayam/02-doua-tuesday/ali-slim.mp3",
+        "reader": "علي سليم",
+        "spokenreader": "علي سليم",
+        "readerSynonyms": [
+          "علي سليم"
+        ],
+        "image": "https://i.ytimg.com/vi/txrF_ivw9Ro/hqdefault.jpg"
+      },
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/02-ad3iya/ayam/02-doua-tuesday/shubbar.mp3",
+        "reader": "شبر معله",
+        "spokenreader": "شبر معله",
+        "readerSynonyms": [
+          "شبر معله"
+        ],
+        "image": "https://i.ytimg.com/vi/txrF_ivw9Ro/hqdefault.jpg"
+      },
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/02-ad3iya/ayam/02-doua-tuesday/saleh-sheikh.mp3",
+        "reader": "صالح الشيخ",
+        "spokenreader": "صالح الشيخ",
+        "readerSynonyms": [
+          "صالح الشيخ"
+        ],
+        "image": "https://i.ytimg.com/vi/txrF_ivw9Ro/hqdefault.jpg"
+      }
+    ]
+  },
+  "دعاء_يوم_الجمعة": {
+    "name": "دعاء يوم الجمعة",
+    "spokentitle": "دُعَاء يَوْم الجُمُعَة",
+    "synonyms": [
+      "دعاء الجمعة",
+      "دعاء الجمعه",
+      "دعاء يوم الجمعه",
+      "دوعاء الجمعة",
+      "دوعاء يوم الجمعة"
+    ],
+    "sounds": [
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/02-ad3iya/ayam/05-doua-friday/saleh-sheikh.mp3",
+        "reader": "صالح الشيخ",
+        "spokenreader": "صالح الشيخ",
+        "readerSynonyms": [
+          "صالح الشيخ"
+        ],
+        "image": "https://i.ytimg.com/vi/ZDEflvRrmi8/hqdefault.jpg"
+      },
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/AbaTher_AlHalwachi_daa_ywm_aljma_abadhr_alhlwajy_Friday_Dua.mp3",
+        "reader": "أباذر الحلواجي",
+        "spokenreader": "أباذر الحلواجي",
+        "readerSynonyms": [
+          "أباذر الحلواجي"
+        ],
+        "image": "https://i.ytimg.com/vi/ZDEflvRrmi8/hqdefault.jpg"
+      },
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/daa_ywm_aljma_aamr_alkathmy.mp3",
+        "reader": "عامر الكاظمي",
+        "spokenreader": "عامر الكاظمي",
+        "readerSynonyms": [
+          "عامر الكاظمي"
+        ],
+        "image": "https://i.ytimg.com/vi/ZDEflvRrmi8/hqdefault.jpg"
+      },
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/daa_ywm_aljma_bswt_abd_alhy_qmbr_daa_aljma_bswt_hzyn_aday_ywm_aljma.mp3",
+        "reader": "عبدالحي آل قمبر",
+        "spokenreader": "عبدالحي آل قمبر",
+        "readerSynonyms": [
+          "عبدالحي آل قمبر"
+        ],
+        "image": "https://i.ytimg.com/vi/ZDEflvRrmi8/hqdefault.jpg"
+      }
+    ]
+  },
+  "دعاء_يوم_الخميس": {
+    "name": "دعاء يوم الخميس",
+    "spokentitle": "دُعَاء يَوْم الخَمِيس",
+    "synonyms": [
+      "يوم الخميس",
+      "الخميس",
+      "دعاء يوم الخميس",
+      "دعاء الخميس"
+    ],
+    "sounds": [
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/02-ad3iya/ayam/04-doua-thursday/shubbar.mp3",
+        "reader": "شبر معله",
+        "spokenreader": "شبر معله",
+        "readerSynonyms": [
+          "شبر معله"
+        ],
+        "image": "https://i.ytimg.com/vi/BJ_hdVrjBF8/maxresdefault.jpg"
+      },
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/02-ad3iya/ayam/04-doua-thursday/saleh-sheikh.mp3",
+        "reader": "صالح الشيخ",
+        "spokenreader": "صالح الشيخ",
+        "readerSynonyms": [
+          "صالح الشيخ"
+        ],
+        "image": "https://i.ytimg.com/vi/BJ_hdVrjBF8/maxresdefault.jpg"
+      },
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/02-ad3iya/ayam/04-doua-thursday/reza-nourdien.mp3",
+        "reader": "رضا نور الدين",
+        "spokenreader": "رضا نور الدين",
+        "readerSynonyms": [
+          "رضا نور الدين"
+        ],
+        "image": "https://i.ytimg.com/vi/BJ_hdVrjBF8/maxresdefault.jpg"
+      },
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/02-ad3iya/ayam/04-doua-thursday/ali-slim.mp3",
+        "reader": "علي سليم",
+        "spokenreader": "علي سليم",
+        "readerSynonyms": [
+          "علي سليم"
+        ],
+        "image": "https://i.ytimg.com/vi/BJ_hdVrjBF8/maxresdefault.jpg"
+      }
+    ]
+  },
+  "دعاء_يوم_السبت": {
+    "name": "دعاء يوم السبت",
+    "spokentitle": "دُعَاء يَوْم السَّبْت",
+    "synonyms": [
+      "دعاء السبت",
+      "يوم السبت",
+      "دوعاء يوم السبت",
+      "دوعاء السبت"
+    ],
+    "sounds": [
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/02-ad3iya/ayam/06-doua-saturday/saleh-sheikh.mp3",
+        "reader": "صالح الشيخ",
+        "spokenreader": "صالح الشيخ",
+        "readerSynonyms": [
+          "صالح الشيخ"
+        ],
+        "image": "https://i.ytimg.com/vi/Ej2OaWJGqGg/hqdefault.jpg"
+      },
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/AbaTher_AlHalwachi_daa_ywm_alsbt_abadhr_alhlwajy_Saturday_Dua.mp3",
+        "reader": "أباذر الحلواجي",
+        "spokenreader": "أباذر الحلواجي",
+        "readerSynonyms": [
+          "أباذر الحلواجي"
+        ],
+        "image": "https://i.ytimg.com/vi/Ej2OaWJGqGg/hqdefault.jpg"
+      },
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/alkhtyb_alhsyny_abdalhy_aal_qmbr_daa_ywm_alsbt_alkhtyb_alhsyny_abdalhy_aal_qmbr.mp3",
+        "reader": "عبدالحي آل قمبر",
+        "spokenreader": "عبدالحي آل قمبر",
+        "readerSynonyms": [
+          "عبدالحي آل قمبر"
+        ],
+        "image": "https://i.ytimg.com/vi/Ej2OaWJGqGg/hqdefault.jpg"
+      },
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/daa_ywm_alsbt_bswt_alhaj_aly_alkaby.mp3",
+        "reader": "علي الكعبي",
+        "spokenreader": "علي الكعبي",
+        "readerSynonyms": [
+          "علي الكعبي"
+        ],
+        "image": "https://i.ytimg.com/vi/Ej2OaWJGqGg/hqdefault.jpg"
+      }
+    ]
+  },
+  "مكارم_الأخلاق": {
+    "name": "مكارم الأخلاق",
+    "spokentitle": "مَكَارِم الأَخْلَاق",
+    "synonyms": [
+      "دعاء مكارم الاخلاق",
+      "دعاء الاخلاق",
+      "مكارم الاخلاق",
+      "مكارم",
+      "الاخلاق"
+    ],
+    "sounds": [
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/02-ad3iya/sahifa-sajadiya/makarem-akhlak/helwaji.mp3",
+        "reader": "أباذر الحلواجي",
+        "spokenreader": "أباذر الحلواجي",
+        "readerSynonyms": [
+          "أباذر الحلواجي"
+        ],
+        "image": "https://i.ytimg.com/vi/gKzeg_FhIgc/hq720.jpg"
+      },
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/02-ad3iya/sahifa-sajadiya/makarem-akhlak/hsen-ghrayeb.mp3",
+        "reader": "حسين غريب",
+        "spokenreader": "حسين غريب",
+        "readerSynonyms": [
+          "حسين غريب"
+        ],
+        "image": "https://i.ytimg.com/vi/gKzeg_FhIgc/hq720.jpg"
+      },
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/02-ad3iya/sahifa-sajadiya/makarem-akhlak/ali-slim.mp3",
+        "reader": "علي سليم",
+        "spokenreader": "علي سليم",
+        "readerSynonyms": [
+          "علي سليم"
+        ],
+        "image": "https://i.ytimg.com/vi/gKzeg_FhIgc/hq720.jpg"
+      },
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/02-ad3iya/sahifa-sajadiya/makarem-akhlak/mortaza-koraysh.mp3",
+        "reader": "مرتضى قريش",
+        "spokenreader": "مرتضى قريش",
+        "readerSynonyms": [
+          "مرتضى قريش"
+        ],
+        "image": "https://i.ytimg.com/vi/gKzeg_FhIgc/hq720.jpg"
+      }
+    ]
+  },
+  "زيارة_الإمام_الحسن": {
+    "name": "زيارة الإمام الحسن",
+    "spokentitle": "زِيَارَة الإِمَام الحَسَن",
+    "synonyms": [
+      "زيارة الامام الحسن",
+      "زيارة الحسن",
+      "الحسن",
+      "الامام الحسن",
+      "الإمام الحسن"
+    ],
+    "sounds": [
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/05-zeyarat/3amma/04-mojtaba/reza-nourdine.mp3",
+        "reader": "رضا نور الدين",
+        "spokenreader": "رضا نور الدين",
+        "readerSynonyms": [
+          "رضا نور الدين"
+        ],
+        "image": "https://i.ytimg.com/vi/Z5hVvNTVRxg/maxresdefault.jpg"
+      },
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/05-zeyarat/3amma/04-mojtaba/ali-slim.mp3",
+        "reader": "علي سليم",
+        "spokenreader": "علي سليم",
+        "readerSynonyms": [
+          "علي سليم"
+        ],
+        "image": "https://i.ytimg.com/vi/ZdOPm0SjKug/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCgFcBwtQ5gpBHk2RZrzfWOM_X42g"
+      },
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/05-zeyarat/3amma/04-mojtaba/walid-mazidi.mp3",
+        "reader": "وليد المزيدي",
+        "spokenreader": "وليد المزيدي",
+        "readerSynonyms": [
+          "وليد المزيدي"
+        ],
+        "image": "https://i.ytimg.com/vi/xqLRtD16tzQ/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAH9Ki0H8hWN2NF2LONP2ugdVRIPg"
+      },
+      {
+        "url": "https://imamali.net/files/21/06/20/qxvcxk.mp3",
+        "reader": "أمير الكعبي",
+        "spokenreader": "أمير الكعبي",
+        "readerSynonyms": [
+          "أمير الكعبي"
+        ],
+        "image": "https://i.ytimg.com/vi/Z5hVvNTVRxg/maxresdefault.jpg"
+      }
+    ]
+  },
+  "زيارة_الإمام_الحسين": {
+    "name": "زيارة الإمام الحسين",
+    "spokentitle": "زِيَارَة الإِمَام الحُسَيْن",
+    "synonyms": [
+      "زيارة الحسين",
+      "الإمام الحسين",
+      "الحسين",
+      "وارث",
+      "زيارة وارث"
+    ],
+    "sounds": [
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/05-zeyarat/3amma/05-housen/wareth/jasem-demstani.mp3",
+        "reader": "جاسم الدمستاني",
+        "spokenreader": "جاسم الدمستاني",
+        "readerSynonyms": [
+          "جاسم الدمستاني"
+        ],
+        "image": "https://i.ytimg.com/vi/o57thjThHk8/hq720.jpg?sqp=-oaymwE7CK4FEIIDSFryq4qpAy0IARUAAAAAGAElAADIQj0AgKJD8AEB-AH-CYAC0AWKAgwIABABGFkgTyhlMA8=&rs=AOn4CLCJZmJjL6J75I4m945FxV9idsl9Ww"
+      },
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/05-zeyarat/3amma/05-housen/wareth/mortaza-koraysh.mp3",
+        "reader": "مرتضى قريش",
+        "spokenreader": "مرتضى قريش",
+        "readerSynonyms": [
+          "مرتضى قريش"
+        ],
+        "image": "https://i.ytimg.com/vi/sT3EkU7vMnY/maxresdefault.jpg"
+      }
+    ]
+  },
+  "زيارة_الرسول_الأعظم": {
+    "name": "زيارة الرسول الأعظم",
+    "spokentitle": "زِيَارَة الرَّسُول الأَعْظَم",
+    "synonyms": [
+      "زيارة الرسول الاعظم",
+      "زيارة النبي",
+      "الرسول",
+      "النبي",
+      "زيارة النبي الأعظم",
+      "النبي الاعظم"
+    ],
+    "sounds": [
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/05-zeyarat/3amma/01-rasoul/maitham-moti3i.mp3",
+        "reader": "ميثم مطيعي",
+        "spokenreader": "ميثم مطيعي",
+        "readerSynonyms": [
+          "ميثم مطيعي"
+        ],
+        "image": "https://i.ytimg.com/vi/H9ue86hqFxk/maxresdefault.jpg"
+      },
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/05-zeyarat/3amma/01-rasoul/amer-kazimi.mp3",
+        "reader": "عامر الكاظمي",
+        "spokenreader": "عامر الكاظمي",
+        "readerSynonyms": [
+          "عامر الكاظمي"
+        ],
+        "image": "https://i.ytimg.com/vi/8GPllNgBr1s/hq720.jpg"
+      }
+    ]
+  },
+  "زيارة_وارث": {
+    "name": "زيارة وارث",
+    "spokentitle": "زِيَارَة وَارِث",
+    "synonyms": [
+      "وارث",
+      "الامام الحسين",
+      "الإمام الحسين",
+      "الحسين"
+    ],
+    "sounds": [
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/05-zeyarat/3amma/05-housen/wareth/mortaza-koraysh.mp3",
+        "reader": "مرتضى قريش",
+        "spokenreader": "مرتضى قريش",
+        "readerSynonyms": [
+          "مرتضى قريش"
+        ],
+        "image": "https://islamasil.com/wp-content/uploads/2022/01/islamasil-456-4-1.jpg"
+      },
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/05-zeyarat/3amma/05-housen/wareth/jasem-demstani.mp3",
+        "reader": "جاسم الدمستاني",
+        "spokenreader": "جاسم الدمستاني",
+        "readerSynonyms": [
+          "جاسم الدمستاني"
+        ],
+        "image": "https://i.ytimg.com/vi/1i0IfVHoLbc/hq720.jpg?sqp=-oaymwE7CK4FEIIDSFryq4qpAy0IARUAAAAAGAElAADIQj0AgKJD8AEB-AH-CYAC0AWKAgwIABABGHIgWygyMA8=&rs=AOn4CLAW80kKh_TgZFX0O45k5tE_LqDBLw"
+      }
+    ]
+  },
+  "أذان": {
+    "name": "أذان",
+    "spokentitle": "أَذَان",
+    "synonyms": [
+      "الآذان",
+      "نداء الصلاة",
+      "اذان",
+      "أذان",
+      "الاذان",
+      "الأذان",
+      "الأذآن",
+      "اذآن"
+    ],
+    "sounds": [
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/07-azan/34-3ataba-husseineya.mp3",
+        "reader": "العتبة الحسينية المقدسة",
+        "spokenreader": "العتبة الحسينية المقدسة",
+        "readerSynonyms": [
+          "العتبة الحسينية المقدسة"
+        ],
+        "image": "https://imamhussain-fm.com/public/public/uploads/63198-05132021165839609d308fdfb51.jpg"
+      },
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/07-azan/36-3ataba-kazimeya.mp3",
+        "reader": "العتبة الكاظمية المقدسة",
+        "spokenreader": "العتبة الكاظمية المقدسة",
+        "readerSynonyms": [
+          "العتبة الكاظمية المقدسة"
+        ],
+        "image": "https://www.kalimaiq.net/storage/168984992279f7c0f19945db410a392f510ed3a6ee.jpeg"
+      },
+      {
+        "url": "https://static.rafed.net/MP3Files/adhan/rafed-007.mp3",
+        "reader": "أباذر الحلواجي",
+        "spokenreader": "أباذر الحلواجي",
+        "readerSynonyms": [
+          "أباذر الحلواجي"
+        ],
+        "image": "https://i.ytimg.com/vi/r5Pk5ehuTdo/maxresdefault.jpg"
+      },
+      {
+        "url": "https://abothomama.s3.eu-north-1.amazonaws.com/azan3.mp3",
+        "reader": "حسين الزبيدي",
+        "spokenreader": "حسين الزبيدي",
+        "readerSynonyms": [
+          "حسين الزبيدي"
+        ],
+        "image": "https://i.ytimg.com/vi/ju9h5xJBGzk/hq720.jpg"
+      },
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/07-azan/27-mohamad-ali-amhaz.mp3",
+        "reader": "علي أمهر",
+        "spokenreader": "علي أمهر",
+        "readerSynonyms": [
+          "علي أمهر"
+        ],
+        "image": "https://daniapp.org/sawt_alhuda3.png"
+      },
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/07-azan/35-3ataba-radaweya.mp3",
+        "reader": "العتبة الرضوية المقدسة",
+        "spokenreader": "العتبة الرضوية المقدسة",
+        "readerSynonyms": [
+          "العتبة الرضوية المقدسة"
+        ],
+        "image": "https://pbs.twimg.com/media/D4BEcoQW4AAs3r9.jpg:large"
+      },
+      {
+        "url": "https://static.rafed.net/MP3Files/adhan/08627-adan.mp3",
+        "reader": "محمد غفاري",
+        "spokenreader": "محمد غفاري",
+        "readerSynonyms": [
+          "محمد غفاري"
+        ],
+        "image": "https://i.ytimg.com/vi/ju9h5xJBGzk/hq720.jpg?sqp=-oaymwE7CK4FEIIDSFryq4qpAy0IARUAAAAAGAElAADIQj0AgKJD8AEB-AH-CYAC0AWKAgwIABABGE0gXShlMA8=&rs=AOn4CLBN6MEI0jZfy_g5Ze6qjYl84-zprw"
+      },
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/07-azan/25-abdel-karim-kassem03.mp3",
+        "reader": "عبدالكريم قاسم",
+        "spokenreader": "عبدالكريم قاسم",
+        "readerSynonyms": [
+          "عبدالكريم قاسم"
+        ],
+        "image": "https://i.ytimg.com/vi/9x_pTylMkpI/hq720.jpg"
+      }
+    ]
+  },
+  "دعاء_أهل_الثغور": {
+    "name": "دعاء أهل الثغور",
+    "spokentitle": "دُعَاء أَهْل الثُّغُور",
+    "synonyms": [
+      "دعاء الثغور",
+      "الثغور",
+      "اهل الثغور"
+    ],
+    "sounds": [
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/02-ad3iya/sahifa-sajadiya/ahel-thughor/mhmod-issa.mp3",
+        "reader": "محمود عيسى",
+        "spokenreader": "محمود عيسى",
+        "readerSynonyms": [
+          "محمود عيسى"
+        ],
+        "image": "https://i.ytimg.com/vi/ipoc2wKaA7U/sddefault.jpg"
+      },
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/02-ad3iya/sahifa-sajadiya/ahel-thughor/maitham-kazem.mp3",
+        "reader": "ميثم كاظم",
+        "spokenreader": "ميثم كاظم",
+        "readerSynonyms": [
+          "ميثم كاظم"
+        ],
+        "image": "https://i.ytimg.com/vi/rph7ARBF3GY/maxresdefault.jpg"
+      }
+    ]
+  },
+  "الندبة": {
+    "name": "دعاء الندبة",
+    "spokentitle": "دُعَاء النَّدْبَة",
+    "synonyms": [
+      "الندبة",
+      "الندبه",
+      "دعاء الندبة",
+      "دعاء الندبه"
+    ],
+    "sounds": [
+      {
+        "url": "https://static.rafed.net/MP3Files/doaa/adeeye/nodba/Doa-AlNodbe(199).mp3",
+        "reader": "مرتضى قريش",
+        "spokenreader": "مرتضى قريش",
+        "readerSynonyms": [
+          "مرتضى قريش"
+        ],
+        "image": "https://i.ytimg.com/vi/aWjV736Nxs4/maxresdefault.jpg"
+      },
+      {
+        "url": "https://static.rafed.net/MP3Files/doaa/adeeye/nodba/Doa-AlNodbe(166).mp3",
+        "reader": "علي النشابة",
+        "spokenreader": "علي النشابة",
+        "readerSynonyms": [
+          "علي النشابة"
+        ],
+        "image": "https://i.ytimg.com/vi/qvXYEwEY8E4/hq720.jpg"
+      },
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/06-monasabat/15-aljom3a/doua/06-nodba/ahmad-mousawi.mp3",
+        "reader": "أحمد الموسوي",
+        "spokenreader": "أحمد الموسوي",
+        "readerSynonyms": [
+          "أحمد الموسوي"
+        ],
+        "image": "https://i.ytimg.com/vi/bFBDsKCx6Ic/maxresdefault.jpg"
+      },
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/06-monasabat/15-aljom3a/doua/06-nodba/al-qambar.mp3",
+        "reader": "عبدالحي آل قمبر",
+        "spokenreader": "عبدالحي آل قمبر",
+        "readerSynonyms": [
+          "عبدالحي آل قمبر"
+        ],
+        "image": "https://i.ytimg.com/vi/jzmzmS_mOsM/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBdERcRQ7vwYtTmwoNFNWgv9NSWag"
+      },
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/06-monasabat/15-aljom3a/doua/06-nodba/ali-medlej.mp3",
+        "reader": "علي مدلج",
+        "spokenreader": "علي مدلج",
+        "readerSynonyms": [
+          "علي مدلج"
+        ],
+        "image": "https://i.ytimg.com/vi/mtg01txNDas/maxresdefault.jpg"
+      },
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/06-monasabat/15-aljom3a/doua/06-nodba/shubbar.mp3",
+        "reader": "شبر معله",
+        "spokenreader": "شبر معله",
+        "readerSynonyms": [
+          "شبر معله"
+        ],
+        "image": "https://i.ytimg.com/vi/2x_yNoO1K28/maxresdefault.jpg"
+      }
+    ]
+  },
+  "يا_عدتي": {
+    "name": "دعاء ياعدتي",
+    "spokentitle": "دُعَاء يَا عُدَّتِي",
+    "synonyms": [
+      "دعاء يا عدتي",
+      "عدتي",
+      "الدعاء",
+      "ياعدتي",
+      "يا عدتي"
+    ],
+    "sounds": [
+      {
+        "url": "https://static.rafed.net/MP3Files/doaa/adeeye/hidar-mohsen-albezvini/hadis-alkasa.mp3",
+        "reader": "احمد قربان",
+        "spokenreader": "احمد قربان",
+        "readerSynonyms": [
+          "احمد قربان"
+        ],
+        "image": "https://almerja.com/video/img/small/1681906875-6182.jpg"
+      },
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/Dua_Ya_Uddati_Qari_Murtada_Qurish_daa_ya_adty_alqare_mrtda_qrysh.mp3",
+        "reader": "مرتضى قريش",
+        "spokenreader": "مرتضى قريش",
+        "readerSynonyms": [
+          "مرتضى قريش"
+        ],
+        "image": "https://i.ytimg.com/vi/7NKqhSmvMfs/maxresdefault.jpg"
+      },
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/daa_yaadty_alhaj_hsyn_ghryb.mp3",
+        "reader": "حسين غريب",
+        "spokenreader": "حسين غريب",
+        "readerSynonyms": [
+          "حسين غريب"
+        ],
+        "image": "https://daniapp.org/sawt_alhuda3.png"
+      },
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/daa_yaadty_mla_salh_alshykh.mp3",
+        "reader": "صالح الشيخ",
+        "spokenreader": "صالح الشيخ",
+        "readerSynonyms": [
+          "صالح الشيخ"
+        ],
+        "image": "https://i.ytimg.com/vi/3aCvA5R6pt8/maxresdefault.jpg"
+      },
+      {
+        "url": "https://shia.noip.me/media/edaie/asdarat/muhamad_habil/yaadeti/njvjnse83imirzo.mp3",
+        "reader": "محمد حبيل",
+        "spokenreader": "محمد حبيل",
+        "readerSynonyms": [
+          "محمد حبيل"
+        ],
+        "image": "https://i.ytimg.com/vi/tnQDQyC-bSU/sddefault.jpg"
+      },
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/02-ad3iya/sahar/ya-oddati/mhmd-alsa3edi.mp3",
+        "reader": "محمد الساعدي",
+        "spokenreader": "محمد الساعدي",
+        "readerSynonyms": [
+          "محمد الساعدي"
+        ],
+        "image": "https://daniapp.org/sawt_alhuda3.png"
+      },
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/daa_ya_adty_mla_mhmd_almla_qna_am_albnyn.mp3",
+        "reader": "محمد الملا",
+        "spokenreader": "محمد الملا",
+        "readerSynonyms": [
+          "محمد الملا"
+        ],
+        "image": "https://i.ytimg.com/vi/wIQMgI5-wK8/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDd-PclSlcMOwtUrcgGKHqwf1Sb0Q"
+      },
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/daa_ya_adty_aly_hmady_bswt_hzyn_DUA_YA_UDATI.mp3",
+        "reader": "علي حمادي",
+        "spokenreader": "علي حمادي",
+        "readerSynonyms": [
+          "علي حمادي"
+        ],
+        "image": "https://i.ytimg.com/vi/n0D1i8DRr1I/hq720.jpg"
+      },
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/daa_ya_adty_jhad_alhdad_h.mp3",
+        "reader": "جهاد الحداد",
+        "spokenreader": "جهاد الحداد",
+        "readerSynonyms": [
+          "جهاد الحداد"
+        ],
+        "image": "https://daniapp.org/sawt_alhuda3.png"
+      }
+    ]
+  },
+  "الزيارة_الجامعة_الكبيرة": {
+    "name": "الزيارة الجامعة الكبيرة",
+    "spokentitle": "الزِّيَارَة الجَامِعَة الكَبِيرَة",
+    "synonyms": [
+      "الزيارة الجامعة",
+      "الزيارة الجامعه",
+      "الجامعة",
+      "الجامعة الكبيرة",
+      "الجامعه الكبيرة"
+    ],
+    "sounds": [
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/alzyar_aljama_alkbyr_alhaj_hsyn_ghryb.mp3",
+        "reader": "حسين غريب",
+        "spokenreader": "حسين غريب",
+        "readerSynonyms": [
+          "حسين غريب"
+        ],
+        "image": "https://i.ytimg.com/vi/9HtHwJksRDg/maxresdefault.jpg"
+      },
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/alzyar_aljama_alkbyr_alshykh_abdalhy_al_qmbr_Ziyarat_Jamia_Kabira.mp3",
+        "reader": "عبدالحي آل قمبر",
+        "spokenreader": "عبدالحي آل قمبر",
+        "readerSynonyms": [
+          "عبدالحي آل قمبر"
+        ],
+        "image": "https://i.ytimg.com/vi/XqvakUBy0h4/maxresdefault.jpg"
+      },
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/alzyar_aljama_alkbyr_bswt_alradwd_mrtda_qrysh.mp3",
+        "reader": "مرتضى قريش",
+        "spokenreader": "مرتضى قريش",
+        "readerSynonyms": [
+          "مرتضى قريش"
+        ],
+        "image": "https://i.ytimg.com/vi/Jh6An0PRcBQ/maxresdefault.jpg"
+      },
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/alzyar_aljama_alkbyr_alhaj_aly_hmady.mp3",
+        "reader": "علي حمادي",
+        "spokenreader": "علي حمادي",
+        "readerSynonyms": [
+          "علي حمادي"
+        ],
+        "image": "https://i.ytimg.com/vi/tVOyrrlTOoQ/maxresdefault.jpg"
+      },
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/alzyar_aljama_alkbyr_bswt_kmyl_aashwr_ZYARAT_JAMEA_KABEER.mp3",
+        "reader": "كميل عاشور",
+        "spokenreader": "كميل عاشور",
+        "readerSynonyms": [
+          "كميل عاشور"
+        ],
+        "image": "https://daniapp.org/sawt_alhuda3.png"
+      },
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/Ziyarat_Jamia_Kabira_AR_SUB_Ali_Fani_al_fan_alzyar_aljama_alkbyr.mp3",
+        "reader": "علي فاني",
+        "spokenreader": "علي فاني",
+        "readerSynonyms": [
+          "علي فاني"
+        ],
+        "image": "https://i.ytimg.com/vi/B2T9obCCIRo/maxresdefault.jpg"
+      }
+    ]
+  },
+  "زيارة_أمير_المؤمنين": {
+    "name": "زيارة أمير المؤمنين",
+    "spokentitle": "زِيَارَة أَمِير المُؤْمِنِين",
+    "synonyms": [
+      "زيارة الأمير",
+      "زيارة الامير"
+    ],
+    "sounds": [
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/05-zeyarat/3amma/03-amir/reza-nourdine.mp3",
+        "reader": "رضا نور الدين",
+        "spokenreader": "رضا نور الدين",
+        "readerSynonyms": [
+          "رضا نور الدين"
+        ],
+        "image": "https://islamasil.com/wp-content/uploads/2022/02/islamasil1232-14-1.jpg"
+      }
+    ]
+  },
+  "مناجاة_التائبين": {
+    "name": "مناجاة التائبين",
+    "spokentitle": "مُنَاجَاة التَّائِبِين",
+    "synonyms": [
+      "التائبين"
+    ],
+    "sounds": [
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/02-ad3iya/sahifa-sajadiya/monajat-15/01monajat-ta2ebin/mhmod-issa.mp3",
+        "reader": "محمود عيسى",
+        "spokenreader": "محمود عيسى",
+        "readerSynonyms": [
+          "محمود عيسى"
+        ],
+        "image": "https://i.ytimg.com/vi/29p-EVinPJ0/maxresdefault.jpg"
+      },
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/02-ad3iya/sahifa-sajadiya/monajat-15/01monajat-ta2ebin/mortada-koraysh.mp3",
+        "reader": "مرتضى قريش",
+        "spokenreader": "مرتضى قريش",
+        "readerSynonyms": [
+          "مرتضى قريش"
+        ],
+        "image": "https://i.ytimg.com/vi/jRa2rTLFuT8/hq720.jpg?sqp=-oaymwE7CK4FEIIDSFryq4qpAy0IARUAAAAAGAElAADIQj0AgKJD8AEB-AH-CYACpAWKAgwIABABGHIgSihBMA8=&rs=AOn4CLDdMRkxQ4ybcfbBA-bA6LyL3Xb4ug"
+      }
+    ]
+  },
+  "مناجاة_الخائفين": {
+    "name": "مناجاة الخائفين",
+    "spokentitle": "مُنَاجَاة الخَائِفِين",
+    "synonyms": [
+      "مناجاه الخائفين",
+      "الخائفين"
+    ],
+    "sounds": [
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/mnaja_alkhaefyn_alshykh_mythm_altmar.mp3",
+        "reader": "مَيثَم التّمّار",
+        "spokenreader": "مَيثَم التّمّار",
+        "readerSynonyms": [
+          "مَيثَم التّمّار"
+        ],
+        "image": "https://daniapp.org/duaa_wallpaper/afraid_duaa.jpg"
+      },
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/mnaja_alkhaefyn_alqare_aamr_alkathmy.mp3",
+        "reader": "عامر الكاظمي",
+        "spokenreader": "عامر الكاظمي",
+        "readerSynonyms": [
+          "عامر الكاظمي"
+        ],
+        "image": "https://daniapp.org/duaa_wallpaper/afraid_duaa.jpg"
+      },
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/ahmd_alftlawy_mnajat_alkhaefyn_ahmd_alftlawy.mp3",
+        "reader": "أحمد الفتلاوي",
+        "spokenreader": "أحمد الفتلاوي",
+        "readerSynonyms": [
+          "أحمد الفتلاوي"
+        ],
+        "image": "https://daniapp.org/duaa_wallpaper/afraid_duaa.jpg"
+      },
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/AbaTher_AlHalwachi_mnaja_alkhaefyn_alhaj_abadhr_alhlwajy_Munajat_Khaifeen.mp3",
+        "reader": "أباذر الحلواجي",
+        "spokenreader": "أباذر الحلواجي",
+        "readerSynonyms": [
+          "أباذر الحلواجي"
+        ],
+        "image": "https://daniapp.org/duaa_wallpaper/afraid_duaa.jpg"
+      },
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/mnaja_alkhaefyn_mrtda_qrysh.mp3",
+        "reader": "مرتضى قريش",
+        "spokenreader": "مرتضى قريش",
+        "readerSynonyms": [
+          "مرتضى قريش"
+        ],
+        "image": "https://daniapp.org/duaa_wallpaper/afraid_duaa.jpg"
+      },
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/mnaja_alkhaefyn_alshykh_abdalhy_qmbr.mp3",
+        "reader": "عبدالحي آل قمبر",
+        "spokenreader": "عبدالحي آل قمبر",
+        "readerSynonyms": [
+          "عبدالحي آل قمبر"
+        ],
+        "image": "https://daniapp.org/duaa_wallpaper/afraid_duaa.jpg"
+      }
+    ]
+  },
+  "مناجاة_الراجين": {
+    "name": "مناجاة الراجين",
+    "spokentitle": "مُنَاجَاة الرَّاجِين",
+    "synonyms": [
+      "مناجاه الراجين",
+      "الراجين"
+    ],
+    "sounds": [
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/mnaja_alrajyn_mrtda_qrysh.mp3",
+        "reader": "مرتضى قريش",
+        "spokenreader": "مرتضى قريش",
+        "readerSynonyms": [
+          "مرتضى قريش"
+        ],
+        "image": "https://media.arabicradio.net/original/2021/08/02/637635141158334914.jpg"
+      },
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/mnaja_alrajyn_aly_hmady_MUNAJAT_ALRAJEEN.mp3",
+        "reader": "علي حمادي",
+        "spokenreader": "علي حمادي",
+        "readerSynonyms": [
+          "علي حمادي"
+        ],
+        "image": "https://media.arabicradio.net/original/2021/08/02/637635141158334914.jpg"
+      },
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/mnaja_alrajyn_alshykh_mythm_altmar.mp3",
+        "reader": "مَيثَم التّمّار",
+        "spokenreader": "مَيثَم التّمّار",
+        "readerSynonyms": [
+          "مَيثَم التّمّار"
+        ],
+        "image": "https://media.arabicradio.net/original/2021/08/02/637635141158334914.jpg"
+      },
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/mnaja_alrajyn_alhaj_hsyn_ghry_b.mp3",
+        "reader": "حسين غريب",
+        "spokenreader": "حسين غريب",
+        "readerSynonyms": [
+          "حسين غريب"
+        ],
+        "image": "https://media.arabicradio.net/original/2021/08/02/637635141158334914.jpg"
+      },
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/AMERALKADHMAY_Munajat_AlRaajin.mp3",
+        "reader": "عامر الكاظمي",
+        "spokenreader": "عامر الكاظمي",
+        "readerSynonyms": [
+          "عامر الكاظمي"
+        ],
+        "image": "https://media.arabicradio.net/original/2021/08/02/637635141158334914.jpg"
+      },
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/ahmd_alftlawy_mnajat_alrajyn_ahmd_alftlawy.mp3",
+        "reader": "أحمد الفتلاوي",
+        "spokenreader": "أحمد الفتلاوي",
+        "readerSynonyms": [
+          "أحمد الفتلاوي"
+        ],
+        "image": "https://media.arabicradio.net/original/2021/08/02/637635141158334914.jpg"
+      },
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/AbaTher_AlHalwachi_mnaja_alrajyn_alhaj_abadhr_alhlwajy_Munajat_Rajeen.mp3",
+        "reader": "أباذر الحلواجي",
+        "spokenreader": "أباذر الحلواجي",
+        "readerSynonyms": [
+          "أباذر الحلواجي"
+        ],
+        "image": "https://media.arabicradio.net/original/2021/08/02/637635141158334914.jpg"
+      }
+    ]
+  },
+  "حديث_الكساء": {
+    "name": "حديث الكساء",
+    "spokentitle": "حَدِيث الكِسَاء",
+    "synonyms": [
+      "الكساء",
+      "الكسا",
+      "حديث الكسا",
+      "حديث الكساء"
+    ],
+    "sounds": [
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/daa_ya_adty_mla_mhmd_almla_qna_am_albnyn.mp3",
+        "reader": "حيدر البزوني",
+        "spokenreader": "حيدر البزوني",
+        "readerSynonyms": [
+          "حيدر البزوني"
+        ],
+        "image": "https://i.ytimg.com/vi/ZnJBSqY0XOw/maxresdefault.jpg"
+      },
+      {
+        "url": "https://static.rafed.net/MP3Files/doaa/adeeye/hidar-mohsen-albezvini/hadis-alkasa.mp3",
+        "reader": "حسين البزوني",
+        "spokenreader": "حسين البزوني",
+        "readerSynonyms": [
+          "حسين البزوني"
+        ],
+        "image": "https://i.ytimg.com/vi/KqHI97Tk45Y/hq720.jpg?sqp=-oaymwE7CK4FEIIDSFryq4qpAy0IARUAAAAAGAElAADIQj0AgKJD8AEB-AH-CYAC0AWKAgwIABABGCwgTSh_MA8=&rs=AOn4CLA0vxKi4y_fv4yJnciI_3zcVGsBsQ"
+      },
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/hdyth_alksa_alradwd_alhsyny_mrtda_qrysh.mp3",
+        "reader": "مرتضى قريش",
+        "spokenreader": "مرتضى قريش",
+        "readerSynonyms": [
+          "مرتضى قريش"
+        ],
+        "image": "https://i.ytimg.com/vi/W0ayWw-XLKA/maxresdefault.jpg"
+      },
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/Ali_Fani_Hadith_E_Kisa.mp3",
+        "reader": "علي فاني",
+        "spokenreader": "علي فاني",
+        "readerSynonyms": [
+          "علي فاني"
+        ],
+        "image": "https://media.arabicradio.net/original/2022/12/26/638076467845106492.jpg"
+      },
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/hdyth_alksa_alhaj_aamr_alkathmy_Hadith_Al_Kisa_Haj_Amer_Al_Kadhmy.mp3",
+        "reader": "عامر الكاظمي",
+        "spokenreader": "عامر الكاظمي",
+        "readerSynonyms": [
+          "عامر الكاظمي"
+        ],
+        "image": "https://i.ytimg.com/vi/JZqt3Z68eOg/sddefault.jpg"
+      },
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/hdyth_alksa_alhaj_hsyn_ghryb.mp3",
+        "reader": "حسين غريب",
+        "spokenreader": "حسين غريب",
+        "readerSynonyms": [
+          "حسين غريب"
+        ],
+        "image": "https://i.ytimg.com/vi/4MsY_duNlv8/hq720.jpg"
+      },
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/hdyth_alksa_aly_hmady_bswt_rwhany_HADEETH_ALKISAA.mp3",
+        "reader": "علي حمادي",
+        "spokenreader": "علي حمادي",
+        "readerSynonyms": [
+          "علي حمادي"
+        ],
+        "image": "https://i.ytimg.com/vi/P3TIYvg3PiI/sddefault.jpg"
+      },
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/hdyth_alksa_bswt_alkhtyb_alhsyny_abdalhy_aal_qmbr_HADITH_AL_KESAA_ABDULHAI_QAMBAR.mp3",
+        "reader": "عبدالحي آل قمبر",
+        "spokenreader": "عبدالحي آل قمبر",
+        "readerSynonyms": [
+          "عبدالحي آل قمبر"
+        ],
+        "image": "https://i.ytimg.com/vi/KqHI97Tk45Y/hq720.jpg"
+      },
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/hdyth_alksa_hany_alkhzaly_HADITH_AL_KESAA.mp3",
+        "reader": "هاني خزعلي",
+        "spokenreader": "هاني خزعلي",
+        "readerSynonyms": [
+          "هاني خزعلي"
+        ],
+        "image": "https://i.ytimg.com/vi/N1I5KGhCCxk/maxresdefault.jpg"
+      },
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/hdyth_alksa_I_jhad_alhdad_Hadith_e_Kisa.mp3",
+        "reader": "جهاد الحداد",
+        "spokenreader": "جهاد الحداد",
+        "readerSynonyms": [
+          "جهاد الحداد"
+        ],
+        "image": "https://i.ytimg.com/vi/vB_NpfUXVQg/hq720.jpg?sqp=-oaymwE7CK4FEIIDSFryq4qpAy0IARUAAAAAGAElAADIQj0AgKJD8AEB-AH-CYAC0AWKAgwIABABGH8gEygUMA8=&rs=AOn4CLC4_ySThWL3pdJvUSa_RuYj-suyoA"
+      },
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/hdyth_alksa_kaml_bswt_mhsn_frhmnd.mp3",
+        "reader": "محسن فرهمند",
+        "spokenreader": "محسن فرهمند",
+        "readerSynonyms": [
+          "محسن فرهمند"
+        ],
+        "image": "https://media.arabicradio.net/original/2022/12/26/638076467845106492.jpg"
+      },
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/hdyth_alksa_mhdy_frwghy_Hadeath_AlKeasa.mp3",
+        "reader": "مهدي فروغي",
+        "spokenreader": "مهدي فروغي",
+        "readerSynonyms": [
+          "مهدي فروغي"
+        ],
+        "image": "https://i.ytimg.com/vi/k00VHyyHl6w/sddefault.jpg"
+      },
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/jdyd_hdyth_alksa_abadhr_alhlwajy_HADITH_AL_KESAA.mp3",
+        "reader": "أباذر الحلواجي",
+        "spokenreader": "أباذر الحلواجي",
+        "readerSynonyms": [
+          "أباذر الحلواجي"
+        ],
+        "image": "https://i.ytimg.com/vi/Pvf8-bUkUDc/maxresdefault.jpg"
+      }
+    ]
+  },
+  "زيارة_السيدة_الزهراء": {
+    "name": "زيارة السيدة الزهراء",
+    "spokentitle": "زِيَارَة السَّيِّدَة الزَّهْرَاء",
+    "synonyms": [
+      "فاطمة",
+      "السيدة فاطمة",
+      "الزهراء",
+      "البتول",
+      "زيارة البتول",
+      "زيارة فاطمة",
+      "زيارة الزهراء",
+      "زيارة فاطمه",
+      "زيارة السيدة فاطمة"
+    ],
+    "sounds": [
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/05-zeyarat/3amma/02-zahraa/saleh-sheikh.mp3",
+        "reader": "صالح الشيخ",
+        "spokenreader": "صالح الشيخ",
+        "readerSynonyms": [
+          "صالح الشيخ"
+        ],
+        "image": "https://i.ytimg.com/vi/Yl6xg8XSMxs/maxresdefault.jpg"
+      },
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/05-zeyarat/3amma/02-zahraa/jomoa-hamed.mp3",
+        "reader": "جمعة حامد",
+        "spokenreader": "جمعة حامد",
+        "readerSynonyms": [
+          "جمعة حامد"
+        ],
+        "image": "https://i.ytimg.com/vi/OHIOuQR4iEA/maxresdefault.jpg"
+      }
+    ]
+  },
+  "دعاء_الحجة": {
+    "name": "دعاء الحجة",
+    "spokentitle": "دُعَاء الحُجَّة",
+    "synonyms": [
+      "المهدي",
+      "الحجة",
+      "الحجه"
+    ],
+    "sounds": [
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/k_daa_alhj_tsjyl_jdyd_bswt_alhaj_hsyn_ghryb.mp3",
+        "reader": "حسين غريب",
+        "spokenreader": "حسين غريب",
+        "readerSynonyms": [
+          "حسين غريب"
+        ],
+        "image": "https://daniapp.org/sawt_alhuda3.png"
+      }
+    ]
+  },
+  "دعاء_العهد": {
+    "name": "دعاء العهد",
+    "spokentitle": "دُعَاء العَهْد",
+    "synonyms": [
+      "العهد"
+    ],
+    "sounds": [
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/daa_alahd_alhaj_hsyn_ghry_b.mp3",
+        "reader": "حسين غريب",
+        "spokenreader": "حسين غريب",
+        "readerSynonyms": [
+          "حسين غريب"
+        ],
+        "image": "https://daniapp.org/sawt_alhuda3.png"
+      },
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/daa_alahd_ahmd_alftlawy.mp3",
+        "reader": "أحمد الفتلاوي",
+        "spokenreader": "أحمد الفتلاوي",
+        "readerSynonyms": [
+          "أحمد الفتلاوي"
+        ],
+        "image": "https://daniapp.org/sawt_alhuda3.png"
+      },
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/daa_alahd_aamr_alkathmy.mp3",
+        "reader": "عامر الكاظمي",
+        "spokenreader": "عامر الكاظمي",
+        "readerSynonyms": [
+          "عامر الكاظمي"
+        ],
+        "image": "https://i.ytimg.com/vi/ESdQ46Ie35o/maxresdefault.jpg"
+      },
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/daa_alahd_bswt_alradwd_mrtda_qrysh_Dua_Al_Ahd_MURTADA_QURISH.mp3",
+        "reader": "مرتضى قريش",
+        "spokenreader": "مرتضى قريش",
+        "readerSynonyms": [
+          "مرتضى قريش"
+        ],
+        "image": "https://i.ytimg.com/vi/lmVplsQPiTY/maxresdefault.jpg"
+      },
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/daa_alahd_bswt_abd_alhy_qmbr_DUA_AHAD_ABDULHAI_QAMBAR.mp3",
+        "reader": "عبدالحي آل قمبر",
+        "spokenreader": "عبدالحي آل قمبر",
+        "readerSynonyms": [
+          "عبدالحي آل قمبر"
+        ],
+        "image": "https://i.ytimg.com/vi/ofuyxboCeXs/hq720.jpg"
+      },
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/daa_alahd_alqare_aly_hmady.mp3",
+        "reader": "علي حمادي",
+        "spokenreader": "علي حمادي",
+        "readerSynonyms": [
+          "علي حمادي"
+        ],
+        "image": "https://i.ytimg.com/vi/7Cfd33QWfzE/maxresdefault.jpg"
+      },
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/daa_alahd_abadhr_alhlwajy_Dua_El_Ahad.mp3",
+        "reader": "أباذر الحلواجي",
+        "spokenreader": "أباذر الحلواجي",
+        "readerSynonyms": [
+          "أباذر الحلواجي"
+        ],
+        "image": "https://daniapp.org/sawt_alhuda3.png"
+      }
+    ]
+  },
+  "دعاء_الفرج": {
+    "name": "دعاء الفرج",
+    "spokentitle": "دُعَاء الفَرَج",
+    "synonyms": [
+      "الفرج"
+    ],
+    "sounds": [
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/AbaTher_AlHalwachi_ilhy_athm_albla_daa_alfrj_abadhr_alhlwajy_Dua_Al_Faraj.mp3",
+        "reader": "أباذر الحلواجي",
+        "spokenreader": "أباذر الحلواجي",
+        "readerSynonyms": [
+          "أباذر الحلواجي"
+        ],
+        "image": "https://daniapp.org/sawt_alhuda3.png"
+      },
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/alkhtyb_alhsyny_abdalhy_aal_qmbr_daa_alfrj_ilhy_athm_albla_alkhtyb_alhsyny_abdalhy_aal_qmbr.mp3",
+        "reader": "عبدالحي آل قمبر",
+        "spokenreader": "عبدالحي آل قمبر",
+        "readerSynonyms": [
+          "عبدالحي آل قمبر"
+        ],
+        "image": "https://i.ytimg.com/vi/ofuyxboCeXs/hq720.jpg"
+      },
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/ahmd_alftlawy_d_aa_alfr_j_alradwd_ahmd_alftlawy.mp3",
+        "reader": "أحمد الفتلاوي",
+        "spokenreader": "أحمد الفتلاوي",
+        "readerSynonyms": [
+          "أحمد الفتلاوي"
+        ],
+        "image": "https://daniapp.org/sawt_alhuda3.png"
+      },
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/jhad_alhdad_daa_alfrj_jhad_alhdad_alhy_athm_albla.mp3",
+        "reader": "جهاد الحداد",
+        "spokenreader": "جهاد الحداد",
+        "readerSynonyms": [
+          "جهاد الحداد"
+        ],
+        "image": "https://daniapp.org/sawt_alhuda3.png"
+      },
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/Ali_Fani_Azumal_Bala_Dua_Faraj.mp3",
+        "reader": "علي فاني",
+        "spokenreader": "علي فاني",
+        "readerSynonyms": [
+          "علي فاني"
+        ],
+        "image": "https://daniapp.org/sawt_alhuda3.png"
+      }
+    ]
+  },
+  "دعاء_زمن_الغيبة": {
+    "name": "دعاء زمن الغيبة",
+    "spokentitle": "دُعَاء زَمَن الغَيْبَة",
+    "synonyms": [
+      "زمن الغيبة",
+      "دعاء الغيبة",
+      "الغيبة"
+    ],
+    "sounds": [
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/daa_zmn_alghyb_abadhr_alhlwajy_Duaa_zamn_algaiba.mp3",
+        "reader": "أباذر الحلواجي",
+        "spokenreader": "أباذر الحلواجي",
+        "readerSynonyms": [
+          "أباذر الحلواجي"
+        ],
+        "image": "https://daniapp.org/sawt_alhuda3.png"
+      },
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/daa_zmn_alghyb_alradwd_nsyr_alkrblaey.mp3",
+        "reader": "نصير الكربلائي",
+        "spokenreader": "نصير الكربلائي",
+        "readerSynonyms": [
+          "نصير الكربلائي"
+        ],
+        "image": "https://daniapp.org/sawt_alhuda3.png"
+      },
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/daa_zmn_alghyb_alhaj_aly_hmady.mp3",
+        "reader": "علي حمادي",
+        "spokenreader": "علي حمادي",
+        "readerSynonyms": [
+          "علي حمادي"
+        ],
+        "image": "https://i.ytimg.com/vi/HMNBHIuldNI/maxresdefault.jpg"
+      },
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/daa_zmn_alghyb_jhad_alhdad.mp3",
+        "reader": "جهاد الحداد",
+        "spokenreader": "جهاد الحداد",
+        "readerSynonyms": [
+          "جهاد الحداد"
+        ],
+        "image": "https://daniapp.org/sawt_alhuda3.png"
+      },
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/daa_zmn_alghyb_mrtda_qrysh_Duaa_Zaman_Al_Ghaibah.mp3",
+        "reader": "مرتضى قريش",
+        "spokenreader": "مرتضى قريش",
+        "readerSynonyms": [
+          "مرتضى قريش"
+        ],
+        "image": "https://i.ytimg.com/vi/iUvGksYAfdg/sddefault.jpg"
+      }
+    ]
+  },
+  "زيارة_أمير_المؤمنين_المخصوصة": {
+    "name": "زيارة أمير المؤمنين المخصوصة",
+    "spokentitle": "زِيَارَة أَمِير المُؤْمِنِين المَخْصُوصَة",
+    "synonyms": [
+      "المخصوصة",
+      "الزيارة المخصوصة",
+      "زيارة الامام علي المخصوصة"
+    ],
+    "sounds": [
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/05-zeyarat/3amma/03-amir/hsen-bahmad.mp3",
+        "reader": "حسن بحمد",
+        "spokenreader": "حسن بحمد",
+        "readerSynonyms": [
+          "حسن بحمد"
+        ],
+        "image": "https://islamasil.com/wp-content/uploads/2022/02/islamasil1232-14-1.jpg"
+      }
+    ]
+  },
+  "زيارة_أمين_الله": {
+    "name": "زيارة أمين الله",
+    "spokentitle": "زِيَارَة أَمِين الله",
+    "synonyms": [
+      "امين الله",
+      "أمين الله",
+      "الأمين",
+      "زيارة الأمين",
+      "زيارة أمين الله"
+    ],
+    "sounds": [
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/05-zeyarat/3amma/03-amir/amino-allah/ali-slim-short.mp3",
+        "reader": "علي سليم",
+        "spokenreader": "علي سليم",
+        "readerSynonyms": [
+          "علي سليم"
+        ],
+        "image": "https://islamasil.com/wp-content/uploads/2022/02/islamasil1232-14-1.jpg"
+      },
+      {
+        "url": "https://imamali.net/files/20/05/15/qhlh5p.mp3",
+        "reader": "قاسم الجبوري",
+        "spokenreader": "قاسم الجبوري",
+        "readerSynonyms": [
+          "قاسم الجبوري"
+        ],
+        "image": "https://islamasil.com/wp-content/uploads/2022/02/islamasil1232-14-1.jpg"
+      },
+      {
+        "url": "https://imamali.net/files/21/06/24/r023vk.mp3",
+        "reader": "شبر معله",
+        "spokenreader": "شبر معله",
+        "readerSynonyms": [
+          "شبر معله"
+        ],
+        "image": "https://islamasil.com/wp-content/uploads/2022/02/islamasil1232-14-1.jpg"
+      }
+    ]
+  },
+  "مناجاة_الشاكين": {
+    "name": "مناجاة الشاكين",
+    "spokentitle": "مُنَاجَاة الشَّاكِين",
+    "synonyms": [
+      "مناجاه الشاكين",
+      "الشاكين"
+    ],
+    "sounds": [
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/mnaja_alshakyn_alshykh_mythm_altmar.mp3",
+        "reader": "مَيثَم التّمّار",
+        "spokenreader": "مَيثَم التّمّار",
+        "readerSynonyms": [
+          "مَيثَم التّمّار"
+        ],
+        "image": "https://media.arabicradio.net/original/2022/01/22/637784348461683131.jpg"
+      },
+      {
+        "url": "https://sawtalhoda.com/audio/uploaded/files/maktaba_iza3ia/02-ad3iya/sahifa-sajadiya/monajat-15/02monajat-alshakin/mhmod-issa.mp3",
+        "reader": "محمود عيسى",
+        "spokenreader": "محمود عيسى",
+        "readerSynonyms": [
+          "محمود عيسى"
+        ],
+        "image": "https://media.arabicradio.net/original/2022/01/22/637784348461683131.jpg"
+      },
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/mnaja_alshakyn_mrtda_qrysh.mp3",
+        "reader": "مرتضى قريش",
+        "spokenreader": "مرتضى قريش",
+        "readerSynonyms": [
+          "مرتضى قريش"
+        ],
+        "image": "https://media.arabicradio.net/original/2022/01/22/637784348461683131.jpg"
+      },
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/mnaja_alshakyn_jmah_hamd.mp3",
+        "reader": "جمعة حامد",
+        "spokenreader": "جمعة حامد",
+        "readerSynonyms": [
+          "جمعة حامد"
+        ],
+        "image": "https://media.arabicradio.net/original/2022/01/22/637784348461683131.jpg"
+      },
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/mnaja_alshakyn_bswt_alqare_aly_salh.mp3",
+        "reader": "علي صالح",
+        "spokenreader": "علي صالح",
+        "readerSynonyms": [
+          "علي صالح"
+        ],
+        "image": "https://i.ytimg.com/vi/5Hg8EiJ_nUM/hqdefault.jpg?sqp=-oaymwEmCOADEOgC8quKqQMa8AEB-AHUBoAC4AOKAgwIABABGEIgUyhlMA8=&rs=AOn4CLBL9rPMbWYp5KqjSN0wVd-DOEIkGQ"
+      },
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/mnaja_alshakyn_alsyd_wlyd_almzydy.mp3",
+        "reader": "وليد المزيدي",
+        "spokenreader": "وليد المزيدي",
+        "readerSynonyms": [
+          "وليد المزيدي"
+        ],
+        "image": "https://media.arabicradio.net/original/2022/01/22/637784348461683131.jpg"
+      },
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/ahmd_alftlawy_mnajat_alshakyn_ahmd_alftlawy.mp3",
+        "reader": "أحمد الفتلاوي",
+        "spokenreader": "أحمد الفتلاوي",
+        "readerSynonyms": [
+          "أحمد الفتلاوي"
+        ],
+        "image": "https://media.arabicradio.net/original/2022/01/22/637784348461683131.jpg"
+      },
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/AbaTher_AlHalwachi_mnaja_alshakyn_alhaj_abadhr_alhlwajy_Munajat_Shakeen.mp3",
+        "reader": "أباذر الحلواجي",
+        "spokenreader": "أباذر الحلواجي",
+        "readerSynonyms": [
+          "أباذر الحلواجي"
+        ],
+        "image": "https://media.arabicradio.net/original/2022/01/22/637784348461683131.jpg"
+      },
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/mnaja_alshakyn_alshykh_shbr_malh.mp3",
+        "reader": "شبر معله",
+        "spokenreader": "شبر معله",
+        "readerSynonyms": [
+          "شبر معله"
+        ],
+        "image": "https://media.arabicradio.net/original/2022/01/22/637784348461683131.jpg"
+      },
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/mnaja_alshakyn_bswt_abd_alhy_qmbr.mp3",
+        "reader": "عبدالحي آل قمبر",
+        "spokenreader": "عبدالحي آل قمبر",
+        "readerSynonyms": [
+          "عبدالحي آل قمبر"
+        ],
+        "image": "https://media.arabicradio.net/original/2022/01/22/637784348461683131.jpg"
+      },
+      {
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/duaa/mnaja_alshakyn_alshykh_hsyn_hajy_qna_am_albnyn.mp3",
+        "reader": "حسين حاجي",
+        "spokenreader": "حسين حاجي",
+        "readerSynonyms": [
+          "حسين حاجي"
+        ],
+        "image": "https://media.arabicradio.net/original/2022/01/22/637784348461683131.jpg"
+      }
+    ]
+  },
+  "latmiyat": {
+    "name": "اللطمية",
+    "synonyms": [
+      "لطمية",
+      "لطميات",
+      "قصيدة",
+      "قصائد",
+      "عزاء",
+      "نوحة",
+      "نوحات"
+    ],
+    "sounds": [
+      {
+        "title": "يا يوم أشوف أعتابك",
+        "spokentitle": "يَا يَوْم أَشُوف أَعْتَابَك",
+        "titleSynonyms": [
+          "يايوم اشوف اعتابك",
+          "يايوم اشوف اعتابك",
+          "يايوم أشوف أعتابك",
+          "يايوم أشوف أعتابك",
+          "اشوف اعتابك",
+          "اشوف اعتابك",
+          "أشوف أعتابك",
+          "أشوف أعتابك",
+          "ارجع ازورك",
+          "ارجع ازورك",
+          "أرجع أزورك",
+          "يايوم",
+          "أرجع أزورك",
+          "يا يوم",
+          "يايوم",
+          "اعتابك",
+          "يا يوم",
+          "أعتابك",
+          "اعتابك",
+          "أعتابك"
+        ],
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/2/zyarat_ya_ywm_ashwf_aatabk_basm_alkrblaey.mp3",
+        "reader": "باسم الكربلائي",
+        "spokenreader": "باسم الكربلائي",
+        "readerSynonyms": [
+          "باسم الكربلائي"
+        ],
+        "image": "https://daniapp.org/sawt-alhuda.png"
+      },
+      {
+        "title": "يشبه عمه عباس",
+        "spokentitle": "يِشْبِه عَمُّه عَبَّاس",
+        "titleSynonyms": [
+          "يشبه عمه",
+          "عمه عباس",
+          "يشبه عباس",
+          "يشبه"
+        ],
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/2/yshbh_amh_abas_alradwd_basm_alkrblaey.mp3",
+        "reader": "باسم الكربلائي",
+        "spokenreader": "باسم الكربلائي",
+        "readerSynonyms": [
+          "باسم الكربلائي"
+        ],
+        "image": "https://daniapp.org/sawt-alhuda.png"
+      },
+      {
+        "title": "من البين يحسين",
+        "spokentitle": "مِن البَيْن يَا حُسَيْن",
+        "titleSynonyms": [
+          "من البين"
+        ],
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/2/ya_hsyn_mn_albyn_yhsyn_basm_alkrblaey.mp3",
+        "reader": "باسم الكربلائي",
+        "spokenreader": "باسم الكربلائي",
+        "readerSynonyms": [
+          "باسم الكربلائي"
+        ],
+        "image": "https://daniapp.org/sawt-alhuda.png"
+      },
+      {
+        "title": "يا بوفاضل",
+        "spokentitle": "يَا بُو فَاضِل",
+        "titleSynonyms": [
+          "بوفاضل",
+          "يابوفاضل",
+          "يبو فاضل"
+        ],
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/2/ya_bwfadl_alradwd_basm_alkrblaey.mp3",
+        "reader": "باسم الكربلائي",
+        "spokenreader": "باسم الكربلائي",
+        "readerSynonyms": [
+          "باسم الكربلائي"
+        ],
+        "image": "https://daniapp.org/sawt-alhuda.png"
+      },
+      {
+        "title": "لاقمر لاح لاح بسمانه",
+        "spokentitle": "لَا قَمَر لَاح لَاح بِسْمَانَه",
+        "titleSynonyms": [
+          "لا قمر لاح",
+          "قمر لاح",
+          "لاح بسمائه",
+          "لاح بسماه"
+        ],
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/2/ya_bab_fatm_laqmr_lah_lah_bsmanh_basm_alkrblaey.mp3",
+        "reader": "باسم الكربلائي",
+        "spokenreader": "باسم الكربلائي",
+        "readerSynonyms": [
+          "باسم الكربلائي"
+        ],
+        "image": "https://daniapp.org/sawt-alhuda.png"
+      },
+      {
+        "title": "أنت نبراس الكرامة",
+        "spokentitle": "أَنْتَ نِبْرَاس الكَرَامَة",
+        "titleSynonyms": [
+          "نبراس الكرامة",
+          "نبراس الكرامه",
+          "نبراس",
+          "الكرامة"
+        ],
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/2/ya_aly_ant_nbras_alkram_basm_alkrblaey.mp3",
+        "reader": "باسم الكربلائي",
+        "spokenreader": "باسم الكربلائي",
+        "readerSynonyms": [
+          "باسم الكربلائي"
+        ],
+        "image": "https://daniapp.org/sawt-alhuda.png"
+      },
+      {
+        "title": "يا عباس ما متت",
+        "spokentitle": "يَا عَبَّاس مَا مِتّ",
+        "titleSynonyms": [
+          "ما متت"
+        ],
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/2/ya_abas_ma_mtt_alradwd_basm_alkrblaey.mp3",
+        "reader": "باسم الكربلائي",
+        "spokenreader": "باسم الكربلائي",
+        "readerSynonyms": [
+          "باسم الكربلائي"
+        ],
+        "image": "https://daniapp.org/sawt-alhuda.png"
+      },
+      {
+        "title": "داحي الباب شلون انصاب",
+        "spokentitle": "دَاحِي البَاب شْلُون إِنْصَاب",
+        "titleSynonyms": [
+          "داحي الباب",
+          "شلون انصاب",
+          "شلون نصاب"
+        ],
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/2/wly_allh_dahy_albab_shlwn_ansab_basm_alkrblaey.mp3",
+        "reader": "باسم الكربلائي",
+        "spokenreader": "باسم الكربلائي",
+        "readerSynonyms": [
+          "باسم الكربلائي"
+        ],
+        "image": "https://daniapp.org/sawt-alhuda.png"
+      },
+      {
+        "title": "يجابر مادريت اشصار",
+        "spokentitle": "يَا جَابِر مَا دْرَيْت إِشْصَار",
+        "titleSynonyms": [
+          "يجابر",
+          "يجابر مادريت",
+          "مادريت"
+        ],
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/2/wjwd_lwjwdy_yjabr_madryt_ashsar_basm_alkrblaey.mp3",
+        "reader": "باسم الكربلائي",
+        "spokenreader": "باسم الكربلائي",
+        "readerSynonyms": [
+          "باسم الكربلائي"
+        ],
+        "image": "https://daniapp.org/sawt-alhuda.png"
+      },
+      {
+        "title": "هل هو سر في ذاتي",
+        "spokentitle": "هَل هُوَ سِر فِي ذَاتِي",
+        "titleSynonyms": [
+          "هو سر في ذاتي",
+          "سر في ذاتي",
+          "هل هو سر"
+        ],
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/2/wjwd_lwjwdy_hl_hw_sr_fy_dhaty_basm_alkrblaey.mp3",
+        "reader": "باسم الكربلائي",
+        "spokenreader": "باسم الكربلائي",
+        "readerSynonyms": [
+          "باسم الكربلائي"
+        ],
+        "image": "https://daniapp.org/sawt-alhuda.png"
+      },
+      {
+        "title": "صلى عليك مليك السماء",
+        "spokentitle": "صَلَّى عَلَيْك مَلِيك السَّمَاء",
+        "titleSynonyms": [
+          "صلى عليك",
+          "مليك السماء",
+          "صلى عليك مليك"
+        ],
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/2/why_alqwafy_sla_alyk_mlyk_alsma_basm_alkrblaey.mp3",
+        "reader": "باسم الكربلائي",
+        "spokenreader": "باسم الكربلائي",
+        "readerSynonyms": [
+          "باسم الكربلائي"
+        ],
+        "image": "https://daniapp.org/sawt-alhuda.png"
+      },
+      {
+        "title": "للعباس اجت زينب",
+        "spokentitle": "لِلْعَبَّاس إِجَت زَيْنَب",
+        "titleSynonyms": [],
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/2/why_alqwafy_llabas_ajt_zynb_basm_alkrblaey.mp3",
+        "reader": "باسم الكربلائي",
+        "spokenreader": "باسم الكربلائي",
+        "readerSynonyms": [
+          "باسم الكربلائي"
+        ],
+        "image": "https://daniapp.org/sawt-alhuda.png"
+      },
+      {
+        "title": "واعجبا يستأذن الأمين",
+        "spokentitle": "وَاعَجَباً يَسْتَأْذِن الأَمِين",
+        "titleSynonyms": [
+          "واعجباً",
+          "يستأذن",
+          "يستأذن الامين",
+          "يستأذنو الامينو"
+        ],
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/2/wafatmtah_waajba_ystadhn_alamyn_basm_alkrblaey.mp3",
+        "reader": "باسم الكربلائي",
+        "spokenreader": "باسم الكربلائي",
+        "readerSynonyms": [
+          "باسم الكربلائي"
+        ],
+        "image": "https://daniapp.org/sawt-alhuda.png"
+      },
+      {
+        "title": "حرت وعيوني ماينشف دمعها",
+        "spokentitle": "حِرْتُ وعُيُونِي مَا يِنْشَف دَمْعَهَا",
+        "titleSynonyms": [
+          "حرت",
+          "حرت وعيوني"
+        ],
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/2/wafatmtah_hrt_waywny_maynshf_dmaha_basm_alkrblaey.mp3",
+        "reader": "باسم الكربلائي",
+        "spokenreader": "باسم الكربلائي",
+        "readerSynonyms": [
+          "باسم الكربلائي"
+        ],
+        "image": "https://daniapp.org/sawt-alhuda.png"
+      },
+      {
+        "title": "يا شيعتي رغم أعدائي",
+        "spokentitle": "يَا شِيعَتِي رَغْم أَعْدَائِي",
+        "titleSynonyms": [],
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/2/swad_allyl_ya_shyaty_rghm_aaday_basm_alkrblaey.mp3",
+        "reader": "باسم الكربلائي",
+        "spokenreader": "باسم الكربلائي",
+        "readerSynonyms": [
+          "باسم الكربلائي"
+        ],
+        "image": "https://daniapp.org/sawt-alhuda.png"
+      },
+      {
+        "title": "يامهدينا ادركنا بالله لاتتركنا",
+        "spokentitle": "يَا مَهْدِيَّنَا أَدْرِكْنَا بِاللهِ لَا تَتْرُكْنَا",
+        "titleSynonyms": [
+          "يامدينا أدركنا",
+          "أدركنا",
+          "بالله لا تتركنا"
+        ],
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/2/swad_allyl_yamhdyna_adrkna_ballh_lattrkna.mp3",
+        "reader": "باسم الكربلائي",
+        "spokenreader": "باسم الكربلائي",
+        "readerSynonyms": [
+          "باسم الكربلائي"
+        ],
+        "image": "https://daniapp.org/sawt-alhuda.png"
+      },
+      {
+        "title": "مسلم حاير ظل بالكوفة",
+        "spokentitle": "مُسْلِم حَايِر ظَل بِالكُوفَة",
+        "titleSynonyms": [
+          "مسلم حاير"
+        ],
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/2/swad_allyl_mslm_hayr_thl_balkwf.mp3",
+        "reader": "باسم الكربلائي",
+        "spokenreader": "باسم الكربلائي",
+        "readerSynonyms": [
+          "باسم الكربلائي"
+        ],
+        "image": "https://daniapp.org/sawt-alhuda.png"
+      },
+      {
+        "title": "طفلة وشفت بالنوم",
+        "spokentitle": "طِفْلَة وشِفْت بِالنَّوْم",
+        "titleSynonyms": [
+          "طفلة وشفت",
+          "شفت بالنوم"
+        ],
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/2/slam_tfl_wshft_balnwm_basm_alkrblaey.mp3",
+        "reader": "باسم الكربلائي",
+        "spokenreader": "باسم الكربلائي",
+        "readerSynonyms": [
+          "باسم الكربلائي"
+        ],
+        "image": "https://daniapp.org/sawt-alhuda.png"
+      },
+      {
+        "title": "سلام سلام",
+        "spokentitle": "سَلَام سَلَام",
+        "titleSynonyms": [],
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/2/slam_slam_slam_basm_alkrblaey.mp3",
+        "reader": "باسم الكربلائي",
+        "spokenreader": "باسم الكربلائي",
+        "readerSynonyms": [
+          "باسم الكربلائي"
+        ],
+        "image": "https://daniapp.org/sawt-alhuda.png"
+      },
+      {
+        "title": "لما هوى جسمك في كربلاء",
+        "spokentitle": "لَمَّا هَوَى جِسْمَك فِي كَرْبَلَاء",
+        "titleSynonyms": [
+          "لما هوى",
+          "هوى جسمك",
+          "لما هوى جسمك"
+        ],
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/2/slam_lma_hwa_jsmk_fy_krbla_basm_alkrblaey.mp3",
+        "reader": "باسم الكربلائي",
+        "spokenreader": "باسم الكربلائي",
+        "readerSynonyms": [
+          "باسم الكربلائي"
+        ],
+        "image": "https://daniapp.org/sawt-alhuda.png"
+      },
+      {
+        "title": "خطار إجاني",
+        "spokentitle": "خَطَّار إِجَانِي",
+        "titleSynonyms": [
+          "خطار اجاني",
+          "خطار"
+        ],
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/2/NA_khtar_ijany_alradwd_basm_alkrblaey.mp3",
+        "reader": "باسم الكربلائي",
+        "spokenreader": "باسم الكربلائي",
+        "readerSynonyms": [
+          "باسم الكربلائي"
+        ],
+        "image": "https://daniapp.org/sawt-alhuda.png"
+      },
+      {
+        "title": "ها يمهدي",
+        "spokentitle": "هَا يَا مَهْدِي",
+        "titleSynonyms": [],
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/2/NA_ha_ymhdy_alradwd_basm_alkrblaey.mp3",
+        "reader": "باسم الكربلائي",
+        "spokenreader": "باسم الكربلائي",
+        "readerSynonyms": [
+          "باسم الكربلائي"
+        ],
+        "image": "https://daniapp.org/sawt-alhuda.png"
+      },
+      {
+        "title": "مرت سنة ونص ",
+        "spokentitle": "مَرَّت سَنَة ونُص",
+        "titleSynonyms": [
+          "مرت سنة",
+          "سنة ونص"
+        ],
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/2/mrt_sn_wns_alradwd_basm_alkrblaey.mp3",
+        "reader": "باسم الكربلائي",
+        "spokenreader": "باسم الكربلائي",
+        "readerSynonyms": [
+          "باسم الكربلائي"
+        ],
+        "image": "https://daniapp.org/sawt-alhuda.png"
+      },
+      {
+        "title": "يا قل هو الله أحد",
+        "spokentitle": "يَا قُل هُوَ اللهُ أَحَد",
+        "titleSynonyms": [],
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/2/lhn_aldma_ya_ql_hw_allh_ahd_basm_alkrblaey.mp3",
+        "reader": "باسم الكربلائي",
+        "spokenreader": "باسم الكربلائي",
+        "readerSynonyms": [
+          "باسم الكربلائي"
+        ],
+        "image": "https://daniapp.org/sawt-alhuda.png"
+      },
+      {
+        "title": "طلعن خوات حسين",
+        "spokentitle": "طِلْعِن خَوَات حُسَيْن",
+        "titleSynonyms": [
+          "طلعن",
+          "خوات حسين"
+        ],
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/2/lbyk_ya_hsyn_tlan_khwat_hsyn_basm_alkrblaey.mp3",
+        "reader": "باسم الكربلائي",
+        "spokenreader": "باسم الكربلائي",
+        "readerSynonyms": [
+          "باسم الكربلائي"
+        ],
+        "image": "https://daniapp.org/sawt-alhuda.png"
+      },
+      {
+        "title": "ريحانة المصطفى",
+        "spokentitle": "رَيْحَانَة المُصْطَفَى",
+        "titleSynonyms": [
+          "ريحانة",
+          "ريحانة المصطفى",
+          "ياكعبة",
+          "ياكعبة للوفا",
+          "ياكعبة للوفاء"
+        ],
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/2/lbyk_ya_hsyn_ryhan_almstfa_yakab_llwfa_basm_alkrblaey.mp3",
+        "reader": "باسم الكربلائي",
+        "spokenreader": "باسم الكربلائي",
+        "readerSynonyms": [
+          "باسم الكربلائي"
+        ],
+        "image": "https://daniapp.org/sawt-alhuda.png"
+      },
+      {
+        "title": "يشاطي الموت حاجيني",
+        "spokentitle": "يَا شَاطِي المَوْت حَاجِينِي",
+        "titleSynonyms": [],
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/2/krbla_yshaty_almwt_hajyny_basm_alkrblaey.mp3",
+        "reader": "باسم الكربلائي",
+        "spokenreader": "باسم الكربلائي",
+        "readerSynonyms": [
+          "باسم الكربلائي"
+        ],
+        "image": "https://daniapp.org/sawt-alhuda.png"
+      },
+      {
+        "title": "والله افلح من طبر",
+        "spokentitle": "وَاللهِ أَفْلَح مَن طَبَّر",
+        "titleSynonyms": [],
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/2/klym_alhsyn_wallh_aflh_mn_tbr_basm_alkrblaey.mp3",
+        "reader": "باسم الكربلائي",
+        "spokenreader": "باسم الكربلائي",
+        "readerSynonyms": [
+          "باسم الكربلائي"
+        ],
+        "image": "https://daniapp.org/sawt-alhuda.png"
+      },
+      {
+        "title": "هالنوح يازهره على منو تنوحين",
+        "spokentitle": "هَالنَّوْح يَا زَهْرَة عَلَى مَنُو تِنُوحِين",
+        "titleSynonyms": [
+          "هالنوح يازهرا",
+          "هالنوح يازهرة",
+          "هالنوح يازهره",
+          "على منو تنوحين"
+        ],
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/2/klym_alhsyn_halnwh_yazhrh_ala_mnw_basm_alkrblaey.mp3",
+        "reader": "باسم الكربلائي",
+        "spokenreader": "باسم الكربلائي",
+        "readerSynonyms": [
+          "باسم الكربلائي"
+        ],
+        "image": "https://daniapp.org/sawt-alhuda.png"
+      },
+      {
+        "title": "أي المحاجر",
+        "spokentitle": "أَيّ المَحَاجِر",
+        "titleSynonyms": [],
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/2/klym_alhsyn_ay_almhajr_latbky_alyk_basm_alkrblaey.mp3",
+        "reader": "باسم الكربلائي",
+        "spokenreader": "باسم الكربلائي",
+        "readerSynonyms": [
+          "باسم الكربلائي"
+        ],
+        "image": "https://daniapp.org/sawt-alhuda.png"
+      },
+      {
+        "title": "يا عبد الله يا وليدي",
+        "spokentitle": "يَا عَبْد الله يَا وِلَيْدِي",
+        "titleSynonyms": [],
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/2/khf_alwra_ya_abd_allh_ya_wlydy.mp3",
+        "reader": "باسم الكربلائي",
+        "spokenreader": "باسم الكربلائي",
+        "readerSynonyms": [
+          "باسم الكربلائي"
+        ],
+        "image": "https://daniapp.org/sawt-alhuda.png"
+      },
+      {
+        "title": "عباس يعيوني",
+        "spokentitle": "عَبَّاس يِعَيُّونِي",
+        "titleSynonyms": [
+          "عباس يعيوني",
+          "يعيوني",
+          "ترضى يذلوني"
+        ],
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/2/khf_alwra_abas_yaywny_trda.mp3",
+        "reader": "باسم الكربلائي",
+        "spokenreader": "باسم الكربلائي",
+        "readerSynonyms": [
+          "باسم الكربلائي"
+        ],
+        "image": "https://daniapp.org/sawt-alhuda.png"
+      },
+      {
+        "title": "قسماً بدمائك يا حيدر",
+        "spokentitle": "قَسَماً بِدِمَائِك يَا حَيْدَر",
+        "titleSynonyms": [],
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/2/kan_mwsa_qsma_bdmaek_ya_hydr_basm_alkrblaey.mp3",
+        "reader": "باسم الكربلائي",
+        "spokenreader": "باسم الكربلائي",
+        "readerSynonyms": [
+          "باسم الكربلائي"
+        ],
+        "image": "https://daniapp.org/sawt-alhuda.png"
+      },
+      {
+        "title": "صارت صوايح ",
+        "spokentitle": "صَارَت صَوَايِح",
+        "titleSynonyms": [
+          "صوايح"
+        ],
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/2/inha_tqwl_sart_swayh_fy_tfwf_basm_alkrblaey.mp3",
+        "reader": "باسم الكربلائي",
+        "spokenreader": "باسم الكربلائي",
+        "readerSynonyms": [
+          "باسم الكربلائي"
+        ],
+        "image": "https://daniapp.org/sawt-alhuda.png"
+      },
+      {
+        "title": "نذرت لحب ابو اليمه",
+        "spokentitle": "نَذَرْت لِحُب أَبُو اليَمَّه",
+        "titleSynonyms": [],
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/2/inha_tqwl_ndhrt_lhb_abw_alymh_basm_alkrblaey.mp3",
+        "reader": "باسم الكربلائي",
+        "spokenreader": "باسم الكربلائي",
+        "readerSynonyms": [
+          "باسم الكربلائي"
+        ],
+        "image": "https://daniapp.org/sawt-alhuda.png"
+      },
+      {
+        "title": "طفلة وتهضموها لمن تعيفوها",
+        "spokentitle": "طِفْلَة وتَهْضِمُوهَا لِمَن تُعَيِّفُوهَا",
+        "titleSynonyms": [],
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/2/byn_alshaar_walradwd_tfl_wthdmwha_lmn_tayfwha.mp3",
+        "reader": "باسم الكربلائي",
+        "spokenreader": "باسم الكربلائي",
+        "readerSynonyms": [
+          "باسم الكربلائي"
+        ],
+        "image": "https://daniapp.org/sawt-alhuda.png"
+      },
+      {
+        "title": "قبل ماتروح وتهاجر",
+        "spokentitle": "قَبْل مَا تْرُوح وتِهَاجِر",
+        "titleSynonyms": [],
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/2/byn_alshaar_walradwd_qbl_matrwh_wthajr_yatyr.mp3",
+        "reader": "باسم الكربلائي",
+        "spokenreader": "باسم الكربلائي",
+        "readerSynonyms": [
+          "باسم الكربلائي"
+        ],
+        "image": "https://daniapp.org/sawt-alhuda.png"
+      },
+      {
+        "title": "العلم عالقاع ياحيدر",
+        "spokentitle": "العَلَم عَالقَاع يَا حَيْدَر",
+        "titleSynonyms": [
+          "العلم عالقاع",
+          "العلم على القاع",
+          "عالقاع",
+          "على القاع",
+          "العلم"
+        ],
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/2/byn_alshaar_walradwd_nay_alalm_aalqaa_yahydr.mp3",
+        "reader": "باسم الكربلائي",
+        "spokenreader": "باسم الكربلائي",
+        "readerSynonyms": [
+          "باسم الكربلائي"
+        ],
+        "image": "https://daniapp.org/sawt-alhuda.png"
+      },
+      {
+        "title": "كل قطرة دم بشرياني",
+        "spokentitle": "كُل قَطْرَة دَم بِشِرْيَانِي",
+        "titleSynonyms": [],
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/2/byn_alshaar_walradwd_kl_qtr_dm_bshryany.mp3",
+        "reader": "باسم الكربلائي",
+        "spokenreader": "باسم الكربلائي",
+        "readerSynonyms": [
+          "باسم الكربلائي"
+        ],
+        "image": "https://daniapp.org/sawt-alhuda.png"
+      },
+      {
+        "title": "حضر بالطف رسول الله",
+        "spokentitle": "حَضَرَ بِالطَّف رَسُول الله",
+        "titleSynonyms": [],
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/2/byn_alshaar_walradwd_hdr_baltf_rswl_allh.mp3",
+        "reader": "باسم الكربلائي",
+        "spokenreader": "باسم الكربلائي",
+        "readerSynonyms": [
+          "باسم الكربلائي"
+        ],
+        "image": "https://daniapp.org/sawt-alhuda.png"
+      },
+      {
+        "title": "حضر عندك علي جدك",
+        "spokentitle": "حَضَرَ عِنْدَك عَلِي جَدَّك",
+        "titleSynonyms": [],
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/2/byn_alshaar_walradwd_hdr_andk_aly_jdk.mp3",
+        "reader": "باسم الكربلائي",
+        "spokenreader": "باسم الكربلائي",
+        "readerSynonyms": [
+          "باسم الكربلائي"
+        ],
+        "image": "https://daniapp.org/sawt-alhuda.png"
+      },
+      {
+        "title": "يالزاير طوف حضرتها",
+        "spokentitle": "يَا الزَّائِر طُوف حَضْرَتَهَا",
+        "titleSynonyms": [],
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/2/bnt_aly_yalzayr_twf_hdrtha_basm_alkrblaey.mp3",
+        "reader": "باسم الكربلائي",
+        "spokenreader": "باسم الكربلائي",
+        "readerSynonyms": [
+          "باسم الكربلائي"
+        ],
+        "image": "https://daniapp.org/sawt-alhuda.png"
+      },
+      {
+        "title": "يابن امي جارت الدنيا",
+        "spokentitle": "يَا بِن أُمِّي جَارَت الدُّنْيَا",
+        "titleSynonyms": [],
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/2/bnt_aly_yabn_amy_jart_aldnya_basm_alkrblaey.mp3",
+        "reader": "باسم الكربلائي",
+        "spokenreader": "باسم الكربلائي",
+        "readerSynonyms": [
+          "باسم الكربلائي"
+        ],
+        "image": "https://daniapp.org/sawt-alhuda.png"
+      },
+      {
+        "title": "ان كان عندك عبرة",
+        "spokentitle": "إِن كَان عِنْدَك عِبْرَة",
+        "titleSynonyms": [
+          "إن كان عندك",
+          "ان كان عندك"
+        ],
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/2/bnt_aly_an_kan_andk_abr_basm_alkrblaey.mp3",
+        "reader": "باسم الكربلائي",
+        "spokenreader": "باسم الكربلائي",
+        "readerSynonyms": [
+          "باسم الكربلائي"
+        ],
+        "image": "https://daniapp.org/sawt-alhuda.png"
+      },
+      {
+        "title": "بكاء العلمين",
+        "spokentitle": "بُكَاء العَلَمَيْن",
+        "titleSynonyms": [],
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/2/bka_alalmyn_basm_alkrblaey.mp3",
+        "reader": "باسم الكربلائي",
+        "spokenreader": "باسم الكربلائي",
+        "readerSynonyms": [
+          "باسم الكربلائي"
+        ],
+        "image": "https://daniapp.org/sawt-alhuda.png"
+      },
+      {
+        "title": "قلي يا الميمون",
+        "spokentitle": "قِلِّي يَا المَيْمُون",
+        "titleSynonyms": [],
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/2/Basim_Karbalaei_qly_ya_almymwn.mp3",
+        "reader": "باسم الكربلائي",
+        "spokenreader": "باسم الكربلائي",
+        "readerSynonyms": [
+          "باسم الكربلائي"
+        ],
+        "image": "https://daniapp.org/sawt-alhuda.png"
+      },
+      {
+        "title": "قارورة",
+        "spokentitle": "قَارُورَة",
+        "titleSynonyms": [
+          "قاروره",
+          "يا قاروره",
+          "يا قارورة",
+          "ياقارورة"
+        ],
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/2/Basim_Karbalaei_qarwr.mp3",
+        "reader": "باسم الكربلائي",
+        "spokenreader": "باسم الكربلائي",
+        "readerSynonyms": [
+          "باسم الكربلائي"
+        ],
+        "image": "https://daniapp.org/sawt-alhuda.png"
+      },
+      {
+        "title": "خلي عيونج بعيني",
+        "spokentitle": "خَلِّي عُيُونِج بِعَيْنِي",
+        "titleSynonyms": [
+          "خلي عيونج",
+          "عيونج بعيني",
+          "خلي عيونك بعيني",
+          "عيونك بعيني"
+        ],
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/2/Basim_Karbalaei_khly_aywnj_bayny.mp3",
+        "reader": "باسم الكربلائي",
+        "spokenreader": "باسم الكربلائي",
+        "readerSynonyms": [
+          "باسم الكربلائي"
+        ],
+        "image": "https://daniapp.org/sawt-alhuda.png"
+      },
+      {
+        "title": "اخذتي زهرة سنيني",
+        "spokentitle": "أَخَذْتِي زَهْرَة سِنِينِي",
+        "titleSynonyms": [
+          "اخذتي زهرة",
+          "زهرة سنيني"
+        ],
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/2/asly_alyk_akhdhty_zhr_snyny_basm_alkrblaey.mp3",
+        "reader": "باسم الكربلائي",
+        "spokenreader": "باسم الكربلائي",
+        "readerSynonyms": [
+          "باسم الكربلائي"
+        ],
+        "image": "https://daniapp.org/sawt-alhuda.png"
+      },
+      {
+        "title": "ناحت زينب وسكنة يمها",
+        "spokentitle": "نَاحَت زَيْنَب وسَكْنَة يُمَّهَا",
+        "titleSynonyms": [
+          "ناحت زينب",
+          "وسكنة يمها"
+        ],
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/2/aqsdwny_naht_sknh_wzynb_ymha_basm_alkrblaey.mp3",
+        "reader": "باسم الكربلائي",
+        "spokenreader": "باسم الكربلائي",
+        "readerSynonyms": [
+          "باسم الكربلائي"
+        ],
+        "image": "https://daniapp.org/sawt-alhuda.png"
+      },
+      {
+        "title": "هاي الطاهرة القدمت اربع ميامين",
+        "spokentitle": "هَاي الطَّاهِرَة اللِّي قَدَّمَت أَرْبَع مَيَامِين",
+        "titleSynonyms": [
+          "القدمت اربع",
+          "اربع ميامين"
+        ],
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/2/aqsdwny_hay_altahr_alqdmt_arba_basm_alkrblaey.mp3",
+        "reader": "باسم الكربلائي",
+        "spokenreader": "باسم الكربلائي",
+        "readerSynonyms": [
+          "باسم الكربلائي"
+        ],
+        "image": "https://daniapp.org/sawt-alhuda.png"
+      },
+      {
+        "title": "اقصدوني فأنا اسمي الحسين",
+        "spokentitle": "إِقْصِدُونِي فَأَنَا إِسْمِي الحُسَيْن",
+        "titleSynonyms": [
+          "اقصدوني",
+          "إقصدوني",
+          "اسمي الحسين",
+          "إسمي الحسين"
+        ],
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/2/aqsdwny_aqsdwny_fana_asmy_alhsyn_basm_alkrblaey.mp3",
+        "reader": "باسم الكربلائي",
+        "spokenreader": "باسم الكربلائي",
+        "readerSynonyms": [
+          "باسم الكربلائي"
+        ],
+        "image": "https://daniapp.org/sawt-alhuda.png"
+      },
+      {
+        "title": "العليلة تنوح بقلب مجروح",
+        "spokentitle": "العَلِيلَة تِنُوح بِقَلْب مَجْرُوح",
+        "titleSynonyms": [
+          "العليلة تنوح",
+          "بقلب مجروح"
+        ],
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/2/aqsdwny_alalylh_tnwh_bqlb_mjrwh_basm_alkrblaey.mp3",
+        "reader": "باسم الكربلائي",
+        "spokenreader": "باسم الكربلائي",
+        "readerSynonyms": [
+          "باسم الكربلائي"
+        ],
+        "image": "https://daniapp.org/sawt-alhuda.png"
+      },
+      {
+        "title": "علي علي مولى",
+        "spokentitle": "عَلِي عَلِي مَوْلَى",
+        "titleSynonyms": [
+          "علي مولى"
+        ],
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/2/ant_alaly_aly_aly_mwla_basm_alkrblaey.mp3",
+        "reader": "باسم الكربلائي",
+        "spokenreader": "باسم الكربلائي",
+        "readerSynonyms": [
+          "باسم الكربلائي"
+        ],
+        "image": "https://daniapp.org/sawt-alhuda.png"
+      },
+      {
+        "title": "وحدك حضرته بيدك دفنته",
+        "spokentitle": "وَحْدِك حَضَرْتُه بِيَدِك دَفَنْتُه",
+        "titleSynonyms": [
+          "وحدك حضرته",
+          "بيدك دفنته"
+        ],
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/2/alrzaya_whdk_hdrth_bydk_dfnth_basm_alkrblaey.mp3",
+        "reader": "باسم الكربلائي",
+        "spokenreader": "باسم الكربلائي",
+        "readerSynonyms": [
+          "باسم الكربلائي"
+        ],
+        "image": "https://daniapp.org/sawt-alhuda.png"
+      },
+      {
+        "title": "قضت ليلة وبعد ليلة",
+        "spokentitle": "قَضَت لَيْلَة وبَعْد لَيْلَة",
+        "titleSynonyms": [
+          "قضت ليلة",
+          "وبعد ليلة"
+        ],
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/2/alrzaya_qdt_lyl_wbad_lyl_basm_alkrblaey.mp3",
+        "reader": "باسم الكربلائي",
+        "spokenreader": "باسم الكربلائي",
+        "readerSynonyms": [
+          "باسم الكربلائي"
+        ],
+        "image": "https://daniapp.org/sawt-alhuda.png"
+      },
+      {
+        "title": "لولا سقوط جنين فاطمة",
+        "spokentitle": "لَوْلَا سُقُوط جَنِين فَاطِمَة",
+        "titleSynonyms": [
+          "لولا سقوط",
+          "جنين فاطمة",
+          "سقوط جنين فاطمة"
+        ],
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/2/alrzaya_lwla_sqwt_jnyn_fatm_basm_alkrblaey.mp3",
+        "reader": "باسم الكربلائي",
+        "spokenreader": "باسم الكربلائي",
+        "readerSynonyms": [
+          "باسم الكربلائي"
+        ],
+        "image": "https://daniapp.org/sawt-alhuda.png"
+      },
+      {
+        "title": "كلما نوقف بمحراب",
+        "spokentitle": "كُلَّمَا نُوقِف بِمِحْرَاب",
+        "titleSynonyms": [
+          "نوقف بمحراب",
+          "كلما نوقف"
+        ],
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/2/alrzaya_klma_nwqf_bmhrab_basm_alkrblaey.mp3",
+        "reader": "باسم الكربلائي",
+        "spokenreader": "باسم الكربلائي",
+        "readerSynonyms": [
+          "باسم الكربلائي"
+        ],
+        "image": "https://daniapp.org/sawt-alhuda.png"
+      },
+      {
+        "title": "يسألون",
+        "spokentitle": "يَسْأَلُون",
+        "titleSynonyms": [
+          "يسإلون",
+          "يسيئلون"
+        ],
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/alsaad/alsaad_yesealoon.mp3",
+        "reader": "حيدر السعد",
+        "spokenreader": "حيدر السعد",
+        "readerSynonyms": [
+          "حيدر السعد"
+        ],
+        "image": "https://i.ytimg.com/vi/MLzfIBufe4k/maxresdefault.jpg"
+      },
+      {
+        "title": "الحق ياعباس",
+        "spokentitle": "الحَق يَا عَبَّاس",
+        "titleSynonyms": [
+          "الحق يا عباس",
+          "الحق يعباس",
+          "إلحق يعباس",
+          "إلحق ياعباس",
+          "الحق",
+          "إلحق",
+          "لحق"
+        ],
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/alsaad/alsaad_elhag_yaabaas.mp3",
+        "reader": "حيدر السعد",
+        "spokenreader": "حيدر السعد",
+        "readerSynonyms": [
+          "حيدر السعد"
+        ],
+        "image": "https://i.ytimg.com/vi/bssa-eiFBXg/maxresdefault.jpg"
+      },
+      {
+        "title": "انا زينب يالعفتني",
+        "spokentitle": "أَنَا زَيْنَب يَا اللِّي عَفَّتْنِي",
+        "titleSynonyms": [
+          "انا زينب",
+          "آنا زينب",
+          "يالعفتني"
+        ],
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/2/alrzaya_ana_zynb_yalaftny_basm_alkrblaey.mp3",
+        "reader": "باسم الكربلائي",
+        "spokenreader": "باسم الكربلائي",
+        "readerSynonyms": [
+          "باسم الكربلائي"
+        ],
+        "image": "https://www.daniapp.org/r_wallpaper/bassim.jpg"
+      },
+      {
+        "title": "ياحيدر قوم",
+        "spokentitle": "يَا حَيْدَر قُوم",
+        "titleSynonyms": [
+          "يا حيدر قوم"
+        ],
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/2/alimam_alhsn_almsmwm_ya_hydr_qwm_basm_alkrblaey.mp3",
+        "reader": "باسم الكربلائي",
+        "spokenreader": "باسم الكربلائي",
+        "readerSynonyms": [
+          "باسم الكربلائي"
+        ],
+        "image": "https://www.daniapp.org/r_wallpaper/bassim.jpg"
+      },
+      {
+        "title": "وسط القلب ياحسين",
+        "spokentitle": "وَسَط القَلْب يَا حُسَيْن",
+        "titleSynonyms": [
+          "وسط القلب",
+          "وسط القالب"
+        ],
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/2/alimam_alhsn_almsmwm_wst_al_lb_yhsyn_basm_alkrblaey.mp3",
+        "reader": "باسم الكربلائي",
+        "spokenreader": "باسم الكربلائي",
+        "readerSynonyms": [
+          "باسم الكربلائي"
+        ],
+        "image": "https://www.daniapp.org/r_wallpaper/bassim.jpg"
+      },
+      {
+        "title": "جبدك وجبدي",
+        "spokentitle": "جَبْدِك وجَبْدِي",
+        "titleSynonyms": [
+          "كبدك وكبدي"
+        ],
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/2/alimam_alhsn_almsmwm_jbdk_wjbdy_ybn_alzjyh_basm_alkrblaey.mp3",
+        "reader": "باسم الكربلائي",
+        "spokenreader": "باسم الكربلائي",
+        "readerSynonyms": [
+          "باسم الكربلائي"
+        ],
+        "image": "https://www.daniapp.org/r_wallpaper/bassim.jpg"
+      },
+      {
+        "title": "زينب لفت يم حسين",
+        "spokentitle": "زَيْنَب لَفَّت يَم حُسَيْن",
+        "titleSynonyms": [
+          "زينب لفت",
+          "زينب ليفت",
+          "يم حسين",
+          "زينب ليفت يم حسين"
+        ],
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/2/aladl_alsmawy_zynb_lft_ym_hsyn_basm_alkrblaey.mp3",
+        "reader": "باسم الكربلائي",
+        "spokenreader": "باسم الكربلائي",
+        "readerSynonyms": [
+          "باسم الكربلائي"
+        ],
+        "image": "https://www.daniapp.org/r_wallpaper/bassim.jpg"
+      },
+      {
+        "title": "جائت إليه من السماء",
+        "spokentitle": "جَاءَت إِلَيْهِ مِن السَّمَاء",
+        "titleSynonyms": [
+          "جائت اليه من السماء",
+          "جائت اليه"
+        ],
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/2/aladl_alsmawy_jat_ilyh_mn_alsma_basm_alkrblaey.mp3",
+        "reader": "باسم الكربلائي",
+        "spokenreader": "باسم الكربلائي",
+        "readerSynonyms": [
+          "باسم الكربلائي"
+        ],
+        "image": "https://www.daniapp.org/r_wallpaper/bassim3.jpg"
+      },
+      {
+        "title": "حياتي لست ارضاها",
+        "spokentitle": "حَيَاتِي لَسْتُ أَرْضَاهَا",
+        "titleSynonyms": [
+          "حياتي",
+          "لستو ارضاها",
+          "حياتي لستو ارضاها"
+        ],
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/2/aladl_alsmawy_hyaty_lst_ardaha_basm_alkrblaey.mp3",
+        "reader": "باسم الكربلائي",
+        "spokenreader": "باسم الكربلائي",
+        "readerSynonyms": [
+          "باسم الكربلائي"
+        ],
+        "image": "https://www.daniapp.org/r_wallpaper/bassim3.jpg"
+      },
+      {
+        "title": "العدل السماوي",
+        "spokentitle": "العَدْل السَّمَاوِي",
+        "titleSynonyms": [
+          "السماوي"
+        ],
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/2/aladl_alsmawy_dmk_ysawy_aladl_alsmawy_basm_alkrblaey.mp3",
+        "reader": "باسم الكربلائي",
+        "spokenreader": "باسم الكربلائي",
+        "readerSynonyms": [
+          "باسم الكربلائي"
+        ],
+        "image": "https://www.daniapp.org/r_wallpaper/bassim3.jpg"
+      },
+      {
+        "title": "يابوفاضل",
+        "spokentitle": "يَا بُو فَاضِل",
+        "titleSynonyms": [
+          "يابو فاضل",
+          "يا بوفاضل",
+          "طيحتك صعبة عليه",
+          "طيحتك",
+          "طيحتك صعبة"
+        ],
+        "url": "https://alexaalhuda.s3.eu-north-1.amazonaws.com/2/-+%D9%8A%D8%A7+%D8%A8%D9%88%D9%81%D8%A7%D8%B6%D9%84+_+%D8%A7%D9%84%D8%B1%D8%A7%D8%AF%D9%88%D8%AF+%D8%A8%D8%A7%D8%B3%D9%85+%D8%A7%D9%84%D9%83%D8%B1%D8%A8%D9%84%D8%A7%D8%A6%D9%8A--2017-09-28.mp3",
+        "reader": "باسم الكربلائي",
+        "spokenreader": "باسم الكربلائي",
+        "readerSynonyms": [
+          "باسم الكربلائي"
+        ],
+        "image": "https://www.daniapp.org/r_wallpaper/bassim.jpg"
+      }
+    ]
+  }
+}
