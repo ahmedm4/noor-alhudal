@@ -1,13 +1,8 @@
 /**
- * Noor Al-Huda Web Application v9
- * تطبيق ويب محسّن لإدارة مهارة نور الهدى
+ * Noor Al-Huda Web Application v9 - Vercel Edition
+ * تطبيق ويب للنشر على Vercel
  * 
- * الميزات:
- * - جلب الأصوات من JSON محلي أو خارجي
- * - قوائم منسدلة للقراء
- * - إدارة الأجراس
- * - جدولة الأصوات
- * - تشغيل فوري عبر Alexa
+ * ⚠️ مهم: كل مستخدم يستخدم توكنه الخاص فقط - لا تداخل بين المستخدمين
  */
 
 require('dotenv').config();
@@ -20,12 +15,6 @@ const path = require('path');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
-if (process.env.NODE_ENV !== 'production') {
-    app.listen(PORT, () => {
-        console.log(`Server is running on port ${PORT}`);
-    });
-}
-
 
 // ====== الإعدادات ======
 const config = {
@@ -85,7 +74,7 @@ app.use(session({
     secret: process.env.SESSION_SECRET || 'noor-alhuda-secret-2024',
     resave: true,
     saveUninitialized: true,
-    cookie: { secure: false, httpOnly: true, maxAge: 7 * 24 * 60 * 60 * 1000 }
+    cookie: { secure: process.env.NODE_ENV === 'production', httpOnly: true, maxAge: 7 * 24 * 60 * 60 * 1000 }
 }));
 
 // ====== الصفحة الرئيسية ======
@@ -150,39 +139,18 @@ async function handleCallback(req, res) {
         
         const profile = profileResponse.data;
         
-        // Get Alexa token for sending events
-        let alexaToken = null;
-        try {
-            const alexaTokenResponse = await axios.post('https://api.amazon.com/auth/o2/token',
-                new URLSearchParams({
-                    grant_type: 'client_credentials',
-                    client_id: config.alexaClientId,
-                    client_secret: config.alexaClientSecret,
-                    scope: 'alexa::proactive_events'
-                }), {
-                    headers: { 'Content-Type': 'application/x-www-form-urlencoded' }
-                }
-            );
-            alexaToken = alexaTokenResponse.data.access_token;
-            console.log('✅ Got Alexa token');
-        } catch (e) {
-            console.log('⚠️ Could not get Alexa token:', e.message);
-        }
-        
         // Save to session
         req.session.user = {
             id: profile.user_id,
             name: profile.name,
             email: profile.email,
             accessToken: access_token,
-            refreshToken: refresh_token,
-            alexaToken: alexaToken
+            refreshToken: refresh_token
         };
         
         // Check if user already has Alexa token from Smart Home Authorization
         const existingUser = await getUserData(profile.user_id);
         
-        // Save to DynamoDB - but DON'T overwrite Alexa tokens!
         const defaultDoorbells = [{ id: 'default-trigger-001', name: 'المنبه الرئيسي', nameEn: 'Main Trigger' }];
         
         if (existingUser && existingUser.accessToken) {
@@ -200,7 +168,6 @@ async function handleCallback(req, res) {
             await saveUserData(profile.user_id, {
                 accessToken: access_token,
                 refreshToken: refresh_token,
-                alexaToken: alexaToken || '',
                 userName: profile.name || '',
                 userEmail: profile.email || '',
                 doorbells: defaultDoorbells
@@ -236,7 +203,7 @@ app.post('/api/schedule', async (req, res) => {
         // Save scheduled audio
         await scheduleAudio(user.id, { audioUrl, audioName, doorbellId });
         
-        // Send doorbell event
+        // Send doorbell event - استخدام توكن المستخدم الحالي فقط!
         const sent = await sendDoorbellEvent(user.id, doorbellId || 'default-trigger-001');
         
         if (!sent) {
@@ -360,92 +327,44 @@ app.post('/api/schedules/:id/toggle', async (req, res) => {
 });
 
 // ====== Send Doorbell Event ======
+// ⚠️ مهم: كل مستخدم يستخدم توكنه الخاص فقط - لا نستخدم توكن مستخدم آخر أبداً!
 async function sendDoorbellEvent(visitorId, doorbellId) {
     try {
-        // أولاً: جرب التوكن الخاص بالمستخدم
+        // جلب بيانات المستخدم الحالي فقط
         let userData = await getUserData(visitorId);
         
-        // ثانياً: إذا لم يعمل، ابحث عن أي توكن صالح في قاعدة البيانات
-        // (التوكن الصحيح يأتي من Lambda عند Authorization)
         if (!userData?.accessToken) {
-            console.log('No token for user, searching for valid token...');
-            userData = await findValidToken();
-        }
-        
-        if (!userData?.accessToken) {
-            console.log('❌ No access token found');
+            console.log('❌ No access token for user:', visitorId);
+            console.log('ℹ️ User needs to enable skill in Alexa App first');
             return false;
         }
         
         // محاولة إرسال الحدث
-        let success = await tryDoorbellEvent(userData.accessToken, doorbellId);
+        let sent = await tryDoorbellEvent(userData.accessToken, doorbellId);
         
-        // إذا فشل، حاول تجديد التوكن
-        if (!success && userData.refreshToken) {
-            console.log('🔄 Token expired, refreshing...');
+        // إذا فشل، حاول تجديد التوكن الخاص بهذا المستخدم فقط
+        if (!sent && userData.refreshToken) {
+            console.log('🔄 Token expired for user, refreshing...');
             const newToken = await refreshAccessToken(userData.refreshToken);
             
             if (newToken) {
-                // حفظ التوكن الجديد
-                await updateUserToken(userData.visitorId || visitorId, newToken.access_token, newToken.refresh_token);
+                // حفظ التوكن الجديد لهذا المستخدم
+                await updateUserToken(visitorId, newToken.access_token, newToken.refresh_token);
                 
                 // إعادة المحاولة
-                success = await tryDoorbellEvent(newToken.access_token, doorbellId);
+                sent = await tryDoorbellEvent(newToken.access_token, doorbellId);
             }
         }
         
-        // إذا لا يزال لا يعمل، جرب البحث عن توكن آخر
-        if (!success) {
-            console.log('🔍 Searching for another valid token...');
-            const otherUser = await findValidToken(userData.visitorId);
-            if (otherUser?.accessToken) {
-                success = await tryDoorbellEvent(otherUser.accessToken, doorbellId);
-                
-                if (!success && otherUser.refreshToken) {
-                    const newToken = await refreshAccessToken(otherUser.refreshToken);
-                    if (newToken) {
-                        await updateUserToken(otherUser.visitorId, newToken.access_token, newToken.refresh_token);
-                        success = await tryDoorbellEvent(newToken.access_token, doorbellId);
-                    }
-                }
-            }
+        if (!sent) {
+            console.log('❌ Failed to send doorbell event for user:', visitorId);
+            console.log('ℹ️ User may need to re-enable skill: Alexa App → Skills → Disable → Enable → Discover devices');
         }
         
-        return success;
+        return sent;
     } catch (error) {
         console.error('Doorbell Error:', error.response?.data || error.message);
         return false;
-    }
-}
-
-// البحث عن توكن صالح في قاعدة البيانات
-async function findValidToken(excludeVisitorId = null) {
-    try {
-        const result = await dynamoClient.send(new ScanCommand({
-            TableName: config.dynamoTable
-        }));
-        
-        if (!result.Items) return null;
-        
-        // ابحث عن أول مستخدم لديه توكن
-        for (const item of result.Items) {
-            const vid = item.visitorId?.S;
-            if (excludeVisitorId && vid === excludeVisitorId) continue;
-            
-            if (item.accessToken?.S) {
-                console.log('Found token for:', vid);
-                return {
-                    visitorId: vid,
-                    accessToken: item.accessToken.S,
-                    refreshToken: item.refreshToken?.S
-                };
-            }
-        }
-        
-        return null;
-    } catch (error) {
-        console.error('findValidToken Error:', error);
-        return null;
     }
 }
 
@@ -487,13 +406,6 @@ async function tryDoorbellEvent(accessToken, doorbellId) {
     } catch (error) {
         const errorData = error.response?.data;
         console.error('Doorbell attempt failed:', errorData?.payload?.code || error.message);
-        
-        // إذا كان الخطأ بسبب التوكن، نرجع false للتجديد
-        if (errorData?.payload?.code === 'INVALID_ACCESS_TOKEN_EXCEPTION') {
-            return false;
-        }
-        
-        // أخطاء أخرى
         return false;
     }
 }
@@ -567,7 +479,6 @@ async function saveUserData(visitorId, data) {
             visitorId: { S: visitorId },
             accessToken: { S: data.accessToken || '' },
             refreshToken: { S: data.refreshToken || '' },
-            alexaToken: { S: data.alexaToken || '' },
             userName: { S: data.userName || '' },
             userEmail: { S: data.userEmail || '' },
             doorbells: { S: JSON.stringify(data.doorbells || []) },
@@ -589,7 +500,6 @@ async function getUserData(visitorId) {
             visitorId: result.Item.visitorId?.S,
             accessToken: result.Item.accessToken?.S,
             refreshToken: result.Item.refreshToken?.S,
-            alexaToken: result.Item.alexaToken?.S,
             doorbells: result.Item.doorbells ? JSON.parse(result.Item.doorbells.S) : [],
             schedules: result.Item.schedules ? JSON.parse(result.Item.schedules.S) : []
         };
@@ -611,7 +521,6 @@ async function updateUserSchedules(visitorId, schedules) {
     }));
 }
 
-// تحديث معلومات المستخدم فقط (بدون التوكنات)
 async function updateUserProfile(visitorId, data) {
     await dynamoClient.send(new UpdateItemCommand({
         TableName: config.dynamoTable,
@@ -728,7 +637,6 @@ function generateHTML(user, soundsData, doorbells) {
         .btn-play:hover { background: linear-gradient(135deg, #45a049, #3d8b40); }
         .btn-danger { background: #e74c3c; color: white; padding: 8px 15px; }
         
-        /* Tabs */
         .tabs {
             display: flex;
             gap: 10px;
@@ -750,7 +658,6 @@ function generateHTML(user, soundsData, doorbells) {
         .tab-content { display: none; }
         .tab-content.active { display: block; }
         
-        /* Doorbells */
         .doorbells-section {
             background: rgba(255,255,255,0.05);
             border-radius: 15px;
@@ -779,7 +686,6 @@ function generateHTML(user, soundsData, doorbells) {
             font-family: inherit;
         }
         
-        /* Sounds Grid */
         .sounds-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -802,7 +708,6 @@ function generateHTML(user, soundsData, doorbells) {
         .sound-header h3 { color: #e0a346; font-size: 1.2em; }
         .sound-body { padding: 15px 20px; }
         
-        /* Dropdown */
         .reader-select {
             width: 100%;
             padding: 10px 15px;
@@ -817,7 +722,6 @@ function generateHTML(user, soundsData, doorbells) {
         }
         .reader-select option { background: #1a1a2e; color: #fff; }
         
-        /* Search */
         .search-box {
             width: 100%;
             padding: 15px 20px;
@@ -831,7 +735,6 @@ function generateHTML(user, soundsData, doorbells) {
         }
         .search-box::placeholder { color: rgba(255,255,255,0.5); }
         
-        /* Login */
         .login-section {
             text-align: center;
             padding: 60px 20px;
@@ -841,7 +744,6 @@ function generateHTML(user, soundsData, doorbells) {
         .login-section h2 { color: #e0a346; margin-bottom: 20px; }
         .login-section p { color: rgba(255,255,255,0.7); margin-bottom: 30px; }
         
-        /* Toast */
         .toast {
             position: fixed;
             bottom: 30px;
@@ -858,21 +760,14 @@ function generateHTML(user, soundsData, doorbells) {
         .toast.error { background: linear-gradient(135deg, #f44336, #d32f2f); }
         .toast.show { display: block; animation: slideUp 0.3s ease; }
         
-        /* Schedule Form */
         .schedule-form {
             background: rgba(255,255,255,0.05);
             padding: 20px;
             border-radius: 10px;
             margin-bottom: 20px;
         }
-        .form-row {
-            margin-bottom: 15px;
-        }
-        .form-row label {
-            display: block;
-            margin-bottom: 8px;
-            color: rgba(255,255,255,0.8);
-        }
+        .form-row { margin-bottom: 15px; }
+        .form-row label { display: block; margin-bottom: 8px; color: rgba(255,255,255,0.8); }
         .time-input {
             width: 100%;
             padding: 12px 15px;
@@ -883,14 +778,8 @@ function generateHTML(user, soundsData, doorbells) {
             font-family: inherit;
             font-size: 1em;
         }
-        .time-input::-webkit-calendar-picker-indicator {
-            filter: invert(1);
-        }
-        .days-selector {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
+        .time-input::-webkit-calendar-picker-indicator { filter: invert(1); }
+        .days-selector { display: flex; flex-wrap: wrap; gap: 10px; }
         .day-checkbox {
             background: rgba(255,255,255,0.1);
             padding: 8px 12px;
@@ -901,20 +790,10 @@ function generateHTML(user, soundsData, doorbells) {
             gap: 5px;
             transition: all 0.3s;
         }
-        .day-checkbox:has(input:checked) {
-            background: rgba(224,163,70,0.3);
-            border: 1px solid #e0a346;
-        }
-        .day-checkbox input {
-            accent-color: #e0a346;
-        }
+        .day-checkbox:has(input:checked) { background: rgba(224,163,70,0.3); border: 1px solid #e0a346; }
+        .day-checkbox input { accent-color: #e0a346; }
         
-        /* Schedules List */
-        .schedules-list {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
+        .schedules-list { display: flex; flex-direction: column; gap: 10px; }
         .schedule-item {
             background: rgba(255,255,255,0.05);
             padding: 15px 20px;
@@ -925,17 +804,9 @@ function generateHTML(user, soundsData, doorbells) {
             flex-wrap: wrap;
             gap: 10px;
         }
-        .schedule-info {
-            flex: 1;
-        }
-        .schedule-info h4 {
-            color: #e0a346;
-            margin-bottom: 5px;
-        }
-        .schedule-info p {
-            color: rgba(255,255,255,0.6);
-            font-size: 0.9em;
-        }
+        .schedule-info { flex: 1; }
+        .schedule-info h4 { color: #e0a346; margin-bottom: 5px; }
+        .schedule-info p { color: rgba(255,255,255,0.6); font-size: 0.9em; }
         .schedule-time {
             background: rgba(224,163,70,0.2);
             padding: 8px 15px;
@@ -944,16 +815,8 @@ function generateHTML(user, soundsData, doorbells) {
             font-weight: 700;
             font-size: 1.2em;
         }
-        .schedule-actions {
-            display: flex;
-            gap: 10px;
-        }
-        .no-schedules {
-            text-align: center;
-            padding: 30px;
-            color: rgba(255,255,255,0.5);
-        }
-        .toast.show { display: block; animation: slideUp 0.3s ease; }
+        .schedule-actions { display: flex; gap: 10px; }
+        .no-schedules { text-align: center; padding: 30px; color: rgba(255,255,255,0.5); }
         
         @keyframes slideUp {
             from { opacity: 0; transform: translateX(-50%) translateY(20px); }
@@ -986,40 +849,26 @@ function generateHTML(user, soundsData, doorbells) {
             <a href="/logout" class="btn btn-secondary">تسجيل الخروج</a>
         </div>
         
-        <!-- Tabs -->
         <div class="tabs">
             <button class="tab active" onclick="showTab('sounds')">🎵 الأصوات</button>
             <button class="tab" onclick="showTab('doorbells')">🔔 الأجراس</button>
             <button class="tab" onclick="showTab('schedule')">📅 الجدولة</button>
         </div>
         
-        <!-- Sounds Tab -->
         <div id="sounds-tab" class="tab-content active">
-            <!-- Current Doorbell -->
             <div class="doorbells-section">
                 <h3>🔔 الجرس المحدد للتشغيل</h3>
-                <div class="doorbell-list" id="doorbell-select">
-                    <!-- Filled by JS -->
-                </div>
+                <div class="doorbell-list" id="doorbell-select"></div>
             </div>
-            
             <input type="text" class="search-box" id="search" placeholder="🔍 ابحث عن دعاء...">
-            
-            <div class="sounds-grid" id="sounds-container">
-                <!-- Filled by JS -->
-            </div>
+            <div class="sounds-grid" id="sounds-container"></div>
         </div>
         
-        <!-- Doorbells Tab -->
         <div id="doorbells-tab" class="tab-content">
             <div class="doorbells-section">
                 <h3>🔔 إدارة الأجراس</h3>
-                <p style="color: rgba(255,255,255,0.6); margin-bottom: 15px;">
-                    أضف أجراس متعددة لغرف مختلفة. عند تشغيل صوت، سيعمل على الجرس المحدد.
-                </p>
-                <div class="doorbell-list" id="doorbells-list">
-                    <!-- Filled by JS -->
-                </div>
+                <p style="color: rgba(255,255,255,0.6); margin-bottom: 15px;">أضف أجراس متعددة لغرف مختلفة.</p>
+                <div class="doorbell-list" id="doorbells-list"></div>
                 <div class="add-doorbell">
                     <input type="text" id="new-doorbell-name" placeholder="اسم الجرس الجديد...">
                     <button class="btn btn-primary" onclick="addDoorbell()">➕ إضافة</button>
@@ -1027,32 +876,23 @@ function generateHTML(user, soundsData, doorbells) {
             </div>
         </div>
         
-        <!-- Schedule Tab -->
         <div id="schedule-tab" class="tab-content">
             <div class="doorbells-section">
                 <h3>📅 جدولة الأصوات</h3>
-                <p style="color: rgba(255,255,255,0.6); margin-bottom: 20px;">
-                    جدولة تشغيل الأدعية في أوقات محددة يومياً.
-                </p>
+                <p style="color: rgba(255,255,255,0.6); margin-bottom: 20px;">جدولة تشغيل الأدعية في أوقات محددة يومياً.</p>
                 
-                <!-- Add Schedule Form -->
                 <div class="schedule-form">
                     <div class="form-row">
                         <label>🎵 الدعاء:</label>
-                        <select id="schedule-duaa" class="reader-select">
-                            <option value="">-- اختر الدعاء --</option>
-                        </select>
+                        <select id="schedule-duaa" class="reader-select"><option value="">-- اختر الدعاء --</option></select>
                     </div>
                     <div class="form-row">
                         <label>🎙️ القارئ:</label>
-                        <select id="schedule-reader" class="reader-select">
-                            <option value="">-- اختر القارئ --</option>
-                        </select>
+                        <select id="schedule-reader" class="reader-select"><option value="">-- اختر القارئ --</option></select>
                     </div>
                     <div class="form-row">
                         <label>🔔 الجرس:</label>
-                        <select id="schedule-doorbell" class="reader-select">
-                        </select>
+                        <select id="schedule-doorbell" class="reader-select"></select>
                     </div>
                     <div class="form-row">
                         <label>⏰ الوقت:</label>
@@ -1073,11 +913,8 @@ function generateHTML(user, soundsData, doorbells) {
                     <button class="btn btn-primary" onclick="addSchedule()" style="margin-top: 15px;">➕ إضافة جدولة</button>
                 </div>
                 
-                <!-- Scheduled Items List -->
                 <h4 style="color: #e0a346; margin-top: 30px; margin-bottom: 15px;">📋 الجدولات الحالية</h4>
-                <div id="schedules-list" class="schedules-list">
-                    <!-- Filled by JS -->
-                </div>
+                <div id="schedules-list" class="schedules-list"></div>
             </div>
         </div>
         ` : `
@@ -1096,25 +933,21 @@ function generateHTML(user, soundsData, doorbells) {
         const isLoggedIn = ${user ? 'true' : 'false'};
         let doorbells = ${doorbellsJSON};
         let selectedDoorbellId = doorbells[0]?.id || 'default-trigger-001';
+        let schedules = [];
         
-        // Tabs
         function showTab(tabName) {
             document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
             document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
-            
             event.target.classList.add('active');
             document.getElementById(tabName + '-tab').classList.add('active');
         }
         
-        // Render doorbell selector
         function renderDoorbellSelector() {
             const container = document.getElementById('doorbell-select');
             if (!container) return;
-            
             container.innerHTML = doorbells.map(d => 
                 '<div class="doorbell-item ' + (d.id === selectedDoorbellId ? 'selected' : '') + '" onclick="selectDoorbell(\\'' + d.id + '\\')">' +
-                '🔔 ' + d.name +
-                '</div>'
+                '🔔 ' + d.name + '</div>'
             ).join('');
         }
         
@@ -1124,25 +957,20 @@ function generateHTML(user, soundsData, doorbells) {
             showToast('تم تحديد الجرس', 'success');
         }
         
-        // Render doorbells management
         function renderDoorbellsList() {
             const container = document.getElementById('doorbells-list');
             if (!container) return;
-            
             container.innerHTML = doorbells.map(d => 
-                '<div class="doorbell-item">' +
-                '🔔 ' + d.name +
+                '<div class="doorbell-item">🔔 ' + d.name +
                 (doorbells.length > 1 ? ' <button class="btn btn-danger" onclick="deleteDoorbell(\\'' + d.id + '\\')">🗑️</button>' : '') +
                 '</div>'
             ).join('');
         }
         
-        // Add doorbell
         async function addDoorbell() {
             const input = document.getElementById('new-doorbell-name');
             const name = input.value.trim();
             if (!name) return showToast('أدخل اسم الجرس', 'error');
-            
             try {
                 const res = await fetch('/api/doorbells', {
                     method: 'POST',
@@ -1157,90 +985,56 @@ function generateHTML(user, soundsData, doorbells) {
                     renderDoorbellSelector();
                     showToast('تمت إضافة الجرس', 'success');
                 }
-            } catch (e) {
-                showToast('حدث خطأ', 'error');
-            }
+            } catch (e) { showToast('حدث خطأ', 'error'); }
         }
         
-        // Delete doorbell
         async function deleteDoorbell(id) {
             if (!confirm('هل تريد حذف هذا الجرس؟')) return;
-            
             try {
                 const res = await fetch('/api/doorbells/' + id, { method: 'DELETE' });
                 const data = await res.json();
                 if (data.success) {
                     doorbells = data.doorbells;
-                    if (selectedDoorbellId === id) {
-                        selectedDoorbellId = doorbells[0]?.id;
-                    }
+                    if (selectedDoorbellId === id) selectedDoorbellId = doorbells[0]?.id;
                     renderDoorbellsList();
                     renderDoorbellSelector();
                     showToast('تم حذف الجرس', 'success');
                 }
-            } catch (e) {
-                showToast('حدث خطأ', 'error');
-            }
+            } catch (e) { showToast('حدث خطأ', 'error'); }
         }
         
-        // Render sounds
         function renderSounds(filter = '') {
             const container = document.getElementById('sounds-container');
             if (!container) return;
-            
             container.innerHTML = '';
-            
             for (const key in soundsData) {
                 const sound = soundsData[key];
                 if (!sound.sounds || sound.sounds.length === 0) continue;
-                
-                // Filter
                 if (filter && !sound.name.toLowerCase().includes(filter.toLowerCase())) continue;
-                
                 const card = document.createElement('div');
                 card.className = 'sound-card';
-                
-                // Build reader options
-                const options = sound.sounds.map((s, i) => 
-                    '<option value="' + i + '">' + s.reader + '</option>'
-                ).join('');
-                
+                const options = sound.sounds.map((s, i) => '<option value="' + i + '">' + s.reader + '</option>').join('');
                 card.innerHTML = 
-                    '<div class="sound-header">' +
-                        '<h3>' + sound.name + '</h3>' +
-                        '<span style="color: rgba(255,255,255,0.6);">' + sound.sounds.length + ' قارئ</span>' +
-                    '</div>' +
-                    '<div class="sound-body">' +
-                        '<select class="reader-select" id="reader-' + key + '">' + options + '</select>' +
-                        '<button class="btn btn-play" onclick="playSound(\\'' + key + '\\')">▶️ تشغيل</button>' +
-                    '</div>';
-                
+                    '<div class="sound-header"><h3>' + sound.name + '</h3><span style="color: rgba(255,255,255,0.6);">' + sound.sounds.length + ' قارئ</span></div>' +
+                    '<div class="sound-body"><select class="reader-select" id="reader-' + key + '">' + options + '</select>' +
+                    '<button class="btn btn-play" onclick="playSound(\\'' + key + '\\')">▶️ تشغيل</button></div>';
                 container.appendChild(card);
             }
         }
         
-        // Play sound
         async function playSound(key) {
             const select = document.getElementById('reader-' + key);
             const sound = soundsData[key];
             const readerIndex = select ? parseInt(select.value) : 0;
             const reader = sound.sounds[readerIndex];
-            
             if (!reader) return showToast('خطأ في تحميل الصوت', 'error');
-            
             showToast('جاري الإرسال...', 'success');
-            
             try {
                 const res = await fetch('/api/schedule', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({
-                        audioUrl: reader.url,
-                        audioName: sound.name + ' - ' + reader.reader,
-                        doorbellId: selectedDoorbellId
-                    })
+                    body: JSON.stringify({ audioUrl: reader.url, audioName: sound.name + ' - ' + reader.reader, doorbellId: selectedDoorbellId })
                 });
-                
                 const data = await res.json();
                 if (data.success) {
                     showToast('تم إرسال ' + sound.name + ' إلى Alexa', 'success');
@@ -1250,12 +1044,9 @@ function generateHTML(user, soundsData, doorbells) {
                 } else {
                     showToast('حدث خطأ', 'error');
                 }
-            } catch (e) {
-                showToast('حدث خطأ في الاتصال', 'error');
-            }
+            } catch (e) { showToast('حدث خطأ في الاتصال', 'error'); }
         }
         
-        // Toast
         function showToast(msg, type) {
             const toast = document.getElementById('toast');
             toast.textContent = msg;
@@ -1263,37 +1054,18 @@ function generateHTML(user, soundsData, doorbells) {
             setTimeout(() => toast.className = 'toast', 3000);
         }
         
-        // Search
         const searchInput = document.getElementById('search');
-        if (searchInput) {
-            searchInput.addEventListener('input', e => renderSounds(e.target.value));
-        }
-        
-        // Init
-        if (isLoggedIn) {
-            renderSounds();
-            renderDoorbellSelector();
-            renderDoorbellsList();
-            initScheduleForm();
-            loadSchedules();
-        }
-        
-        // ====== Schedule Functions ======
-        let schedules = [];
+        if (searchInput) searchInput.addEventListener('input', e => renderSounds(e.target.value));
         
         function initScheduleForm() {
-            // Fill duaa dropdown
             const duaaSelect = document.getElementById('schedule-duaa');
             if (!duaaSelect) return;
-            
             for (const key in soundsData) {
                 const opt = document.createElement('option');
                 opt.value = key;
                 opt.textContent = soundsData[key].name;
                 duaaSelect.appendChild(opt);
             }
-            
-            // Fill doorbell dropdown
             const doorbellSelect = document.getElementById('schedule-doorbell');
             doorbells.forEach(d => {
                 const opt = document.createElement('option');
@@ -1301,8 +1073,6 @@ function generateHTML(user, soundsData, doorbells) {
                 opt.textContent = d.name;
                 doorbellSelect.appendChild(opt);
             });
-            
-            // Update readers when duaa changes
             duaaSelect.addEventListener('change', updateReaderOptions);
         }
         
@@ -1310,9 +1080,7 @@ function generateHTML(user, soundsData, doorbells) {
             const duaaKey = document.getElementById('schedule-duaa').value;
             const readerSelect = document.getElementById('schedule-reader');
             readerSelect.innerHTML = '<option value="">-- اختر القارئ --</option>';
-            
             if (!duaaKey || !soundsData[duaaKey]) return;
-            
             soundsData[duaaKey].sounds.forEach((s, i) => {
                 const opt = document.createElement('option');
                 opt.value = i;
@@ -1326,38 +1094,20 @@ function generateHTML(user, soundsData, doorbells) {
             const readerIndex = document.getElementById('schedule-reader').value;
             const doorbellId = document.getElementById('schedule-doorbell').value;
             const time = document.getElementById('schedule-time').value;
-            
-            if (!duaaKey || readerIndex === '' || !time) {
-                return showToast('يرجى ملء جميع الحقول', 'error');
-            }
-            
+            if (!duaaKey || readerIndex === '' || !time) return showToast('يرجى ملء جميع الحقول', 'error');
             const duaa = soundsData[duaaKey];
             const reader = duaa.sounds[parseInt(readerIndex)];
-            
-            // Get selected days
             const days = [];
-            document.querySelectorAll('.days-selector input:checked').forEach(cb => {
-                days.push(parseInt(cb.value));
-            });
-            
-            if (days.length === 0) {
-                return showToast('يرجى اختيار يوم واحد على الأقل', 'error');
-            }
-            
+            document.querySelectorAll('.days-selector input:checked').forEach(cb => days.push(parseInt(cb.value)));
+            if (days.length === 0) return showToast('يرجى اختيار يوم واحد على الأقل', 'error');
             const schedule = {
                 id: 'sch-' + Date.now(),
-                duaaKey,
-                duaaName: duaa.name,
-                readerIndex: parseInt(readerIndex),
-                readerName: reader.reader,
-                audioUrl: reader.url,
-                doorbellId,
+                duaaKey, duaaName: duaa.name,
+                readerIndex: parseInt(readerIndex), readerName: reader.reader,
+                audioUrl: reader.url, doorbellId,
                 doorbellName: doorbells.find(d => d.id === doorbellId)?.name || 'غير معروف',
-                time,
-                days,
-                enabled: true
+                time, days, enabled: true
             };
-            
             try {
                 const res = await fetch('/api/schedules', {
                     method: 'POST',
@@ -1369,15 +1119,11 @@ function generateHTML(user, soundsData, doorbells) {
                     schedules = data.schedules;
                     renderSchedulesList();
                     showToast('تمت إضافة الجدولة', 'success');
-                    
-                    // Reset form
                     document.getElementById('schedule-duaa').value = '';
                     document.getElementById('schedule-reader').innerHTML = '<option value="">-- اختر القارئ --</option>';
                     document.getElementById('schedule-time').value = '';
                 }
-            } catch (e) {
-                showToast('حدث خطأ', 'error');
-            }
+            } catch (e) { showToast('حدث خطأ', 'error'); }
         }
         
         async function loadSchedules() {
@@ -1386,14 +1132,11 @@ function generateHTML(user, soundsData, doorbells) {
                 const data = await res.json();
                 schedules = data.schedules || [];
                 renderSchedulesList();
-            } catch (e) {
-                console.error('Error loading schedules:', e);
-            }
+            } catch (e) { console.error('Error loading schedules:', e); }
         }
         
         async function deleteSchedule(id) {
             if (!confirm('هل تريد حذف هذه الجدولة؟')) return;
-            
             try {
                 const res = await fetch('/api/schedules/' + id, { method: 'DELETE' });
                 const data = await res.json();
@@ -1402,64 +1145,54 @@ function generateHTML(user, soundsData, doorbells) {
                     renderSchedulesList();
                     showToast('تم حذف الجدولة', 'success');
                 }
-            } catch (e) {
-                showToast('حدث خطأ', 'error');
-            }
+            } catch (e) { showToast('حدث خطأ', 'error'); }
         }
         
         async function toggleSchedule(id) {
             try {
                 const res = await fetch('/api/schedules/' + id + '/toggle', { method: 'POST' });
                 const data = await res.json();
-                if (data.success) {
-                    schedules = data.schedules;
-                    renderSchedulesList();
-                }
-            } catch (e) {
-                showToast('حدث خطأ', 'error');
-            }
+                if (data.success) { schedules = data.schedules; renderSchedulesList(); }
+            } catch (e) { showToast('حدث خطأ', 'error'); }
         }
         
         function renderSchedulesList() {
             const container = document.getElementById('schedules-list');
             if (!container) return;
-            
             if (schedules.length === 0) {
                 container.innerHTML = '<div class="no-schedules">لا توجد جدولات حالياً</div>';
                 return;
             }
-            
             const dayNames = ['الأحد', 'الإثنين', 'الثلاثاء', 'الأربعاء', 'الخميس', 'الجمعة', 'السبت'];
-            
             container.innerHTML = schedules.map(s => {
                 const daysText = s.days.length === 7 ? 'كل يوم' : s.days.map(d => dayNames[d]).join(', ');
                 return '<div class="schedule-item" style="opacity: ' + (s.enabled ? '1' : '0.5') + '">' +
-                    '<div class="schedule-info">' +
-                        '<h4>' + s.duaaName + '</h4>' +
-                        '<p>🎙️ ' + s.readerName + ' | 🔔 ' + s.doorbellName + '</p>' +
-                        '<p>📆 ' + daysText + '</p>' +
-                    '</div>' +
+                    '<div class="schedule-info"><h4>' + s.duaaName + '</h4>' +
+                    '<p>🎙️ ' + s.readerName + ' | 🔔 ' + s.doorbellName + '</p><p>📆 ' + daysText + '</p></div>' +
                     '<div class="schedule-time">⏰ ' + s.time + '</div>' +
                     '<div class="schedule-actions">' +
-                        '<button class="btn btn-secondary" onclick="toggleSchedule(\\'' + s.id + '\\')">' + (s.enabled ? '⏸️' : '▶️') + '</button>' +
-                        '<button class="btn btn-danger" onclick="deleteSchedule(\\'' + s.id + '\\')">🗑️</button>' +
-                    '</div>' +
-                '</div>';
+                    '<button class="btn btn-secondary" onclick="toggleSchedule(\\'' + s.id + '\\')">' + (s.enabled ? '⏸️' : '▶️') + '</button>' +
+                    '<button class="btn btn-danger" onclick="deleteSchedule(\\'' + s.id + '\\')">🗑️</button></div></div>';
             }).join('');
+        }
+        
+        if (isLoggedIn) {
+            renderSounds();
+            renderDoorbellSelector();
+            renderDoorbellsList();
+            initScheduleForm();
+            loadSchedules();
         }
     </script>
 </body>
 </html>`;
 }
 
-// ====== Start Server ======
-app.listen(PORT, () => {
-    console.log('='.repeat(50));
-    console.log('   نور الهدى - Noor Al-Huda v9');
-    console.log('='.repeat(50));
-    console.log('   Server: http://localhost:' + PORT);
-    console.log('   Sounds: ' + (localSoundsData ? 'Local file' : config.soundsJsonUrl));
-    console.log('   Scheduler: AWS CloudWatch + Lambda');
-    console.log('='.repeat(50));
-});
+// Vercel handler
+if (process.env.NODE_ENV !== 'production') {
+    app.listen(PORT, () => {
+        console.log('Server running on port ' + PORT);
+    });
+}
+
 module.exports = app;
