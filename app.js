@@ -8,7 +8,6 @@
 require('dotenv').config();
 const express = require('express');
 const session = require('express-session');
-const cookieParser = require('cookie-parser');
 const axios = require('axios');
 const { DynamoDBClient, PutItemCommand, GetItemCommand, UpdateItemCommand, DeleteItemCommand, ScanCommand } = require('@aws-sdk/client-dynamodb');
 const fs = require('fs');
@@ -70,7 +69,6 @@ async function fetchSoundsFromJSON() {
 // ====== Middleware ======
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(cookieParser());
 app.set('trust proxy', 1);
 
 // إعدادات الجلسة - 30 يوم
@@ -93,27 +91,33 @@ if (process.env.VERCEL) {
 
 app.use(session(sessionConfig));
 
-// ====== Middleware لاستعادة الجلسة من Cookie ======
-app.use(async (req, res, next) => {
-    // إذا لا يوجد مستخدم في الجلسة، حاول استعادته من الكوكي
-    if (!req.session.user && req.cookies && req.cookies.userId) {
-        const userId = req.cookies.userId;
-        const userData = await getUserData(userId);
-        if (userData && userData.userName) {
-            req.session.user = {
-                id: userId,
-                name: userData.userName,
-                email: userData.userEmail
-            };
-            console.log('✅ Session restored from cookie for:', userId.slice(-10));
-        }
-    }
-    next();
-});
-
 // ====== الصفحة الرئيسية ======
 app.get('/', async (req, res) => {
-    const user = req.session.user;
+    let user = req.session.user;
+    
+    // محاولة استعادة الجلسة من الكوكي إذا لم تكن موجودة
+    if (!user) {
+        const cookieHeader = req.headers.cookie || '';
+        const userIdMatch = cookieHeader.match(/userId=([^;]+)/);
+        if (userIdMatch) {
+            const userId = decodeURIComponent(userIdMatch[1]);
+            try {
+                const userData = await getUserData(userId);
+                if (userData && userData.userName) {
+                    user = {
+                        id: userId,
+                        name: userData.userName,
+                        email: userData.userEmail
+                    };
+                    req.session.user = user;
+                    console.log('✅ Session restored from cookie for:', userId.slice(-10));
+                }
+            } catch (e) {
+                console.log('Could not restore session:', e.message);
+            }
+        }
+    }
+    
     const soundsData = await fetchSoundsFromJSON();
     
     let doorbells = [{ id: 'default-trigger-001', name: 'المنبه الرئيسي' }];
