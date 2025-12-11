@@ -200,10 +200,18 @@ app.post('/api/schedule', async (req, res) => {
     if (!audioUrl) return res.status(400).json({ error: 'Audio URL required' });
     
     try {
-        // Save scheduled audio
+        console.log('📝 Scheduling audio for user:', user.id);
+        console.log('📝 Audio:', audioName, '| URL:', audioUrl.substring(0, 50) + '...');
+        
+        // Save scheduled audio FIRST
         await scheduleAudio(user.id, { audioUrl, audioName, doorbellId });
+        console.log('✅ Audio scheduled successfully');
+        
+        // Small delay to ensure DynamoDB write is complete
+        await new Promise(resolve => setTimeout(resolve, 500));
         
         // Send doorbell event - استخدام توكن المستخدم الحالي فقط!
+        console.log('🔔 Sending doorbell event...');
         const sent = await sendDoorbellEvent(user.id, doorbellId || 'default-trigger-001');
         
         if (!sent) {
@@ -215,6 +223,7 @@ app.post('/api/schedule', async (req, res) => {
             });
         }
         
+        console.log('✅ Doorbell event sent successfully');
         res.json({ success: true, doorbellSent: sent });
     } catch (error) {
         console.error('Schedule Error:', error);
@@ -236,16 +245,16 @@ app.post('/api/doorbells', async (req, res) => {
     const user = req.session.user;
     if (!user) return res.status(401).json({ error: 'Not authenticated' });
     
-    const { name } = req.body;
-    if (!name) return res.status(400).json({ error: 'Name required' });
+    const { name, nameEn } = req.body;
+    if (!name && !nameEn) return res.status(400).json({ error: 'Name required' });
     
     const userData = await getUserData(user.id);
     const doorbells = userData?.doorbells || [];
     
     const newDoorbell = {
         id: 'doorbell-' + Date.now().toString(36),
-        name: name,
-        nameEn: name
+        name: name || nameEn,      // الاسم العربي (أو الإنجليزي إذا لم يوجد)
+        nameEn: nameEn || name     // الاسم الإنجليزي (أو العربي إذا لم يوجد)
     };
     
     doorbells.push(newDoorbell);
@@ -869,9 +878,12 @@ function generateHTML(user, soundsData, doorbells) {
                 <h3>🔔 إدارة الأجراس</h3>
                 <p style="color: rgba(255,255,255,0.6); margin-bottom: 15px;">أضف أجراس متعددة لغرف مختلفة.</p>
                 <div class="doorbell-list" id="doorbells-list"></div>
-                <div class="add-doorbell">
-                    <input type="text" id="new-doorbell-name" placeholder="اسم الجرس الجديد...">
-                    <button class="btn btn-primary" onclick="addDoorbell()">➕ إضافة</button>
+                <div class="add-doorbell" style="flex-direction: column; gap: 10px;">
+                    <div style="display: flex; gap: 10px; width: 100%;">
+                        <input type="text" id="new-doorbell-name" placeholder="الاسم بالعربي (مثال: المجلس)" style="flex: 1;">
+                        <input type="text" id="new-doorbell-name-en" placeholder="الاسم بالإنجليزي (مثال: Majlis)" style="flex: 1;">
+                    </div>
+                    <button class="btn btn-primary" onclick="addDoorbell()" style="width: 100%;">➕ إضافة جرس</button>
                 </div>
             </div>
         </div>
@@ -968,19 +980,27 @@ function generateHTML(user, soundsData, doorbells) {
         }
         
         async function addDoorbell() {
-            const input = document.getElementById('new-doorbell-name');
-            const name = input.value.trim();
-            if (!name) return showToast('أدخل اسم الجرس', 'error');
+            const inputAr = document.getElementById('new-doorbell-name');
+            const inputEn = document.getElementById('new-doorbell-name-en');
+            const nameAr = inputAr.value.trim();
+            const nameEn = inputEn.value.trim();
+            
+            if (!nameAr && !nameEn) return showToast('أدخل اسم الجرس بالعربي أو الإنجليزي', 'error');
+            
             try {
                 const res = await fetch('/api/doorbells', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ name })
+                    body: JSON.stringify({ 
+                        name: nameAr || nameEn,
+                        nameEn: nameEn || nameAr
+                    })
                 });
                 const data = await res.json();
                 if (data.success) {
                     doorbells = data.doorbells;
-                    input.value = '';
+                    inputAr.value = '';
+                    inputEn.value = '';
                     renderDoorbellsList();
                     renderDoorbellSelector();
                     showToast('تمت إضافة الجرس', 'success');
