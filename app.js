@@ -313,22 +313,31 @@ app.post('/api/doorbells', async (req, res) => {
     doorbells.push(newDoorbell);
     await updateUserDoorbells(user.id, doorbells);
     
-    res.json({ success: true, doorbell: newDoorbell, doorbells });
+    // إرسال AddOrUpdateReport لـ Alexa لإبلاغها بالجرس الجديد
+    const reportSent = await sendAddOrUpdateReport(user.id, newDoorbell);
+    console.log('AddOrUpdateReport sent:', reportSent);
+    
+    res.json({ success: true, doorbell: newDoorbell, doorbells, reportSent });
 });
 
 app.delete('/api/doorbells/:id', async (req, res) => {
     const user = req.session.user;
     if (!user) return res.status(401).json({ error: 'Not authenticated' });
     
+    const deletedId = req.params.id;
     const userData = await getUserData(user.id);
     let doorbells = userData?.doorbells || [];
     
-    doorbells = doorbells.filter(d => d.id !== req.params.id);
+    doorbells = doorbells.filter(d => d.id !== deletedId);
     if (doorbells.length === 0) {
-        doorbells = [{ id: 'default-trigger-001', name: 'المنبه الرئيسي' }];
+        doorbells = [{ id: 'default-trigger-001', name: 'المنبه الرئيسي', nameEn: 'Main Trigger' }];
     }
     
     await updateUserDoorbells(user.id, doorbells);
+    
+    // إرسال DeleteReport لـ Alexa
+    await sendDeleteReport(user.id, deletedId);
+    
     res.json({ success: true, doorbells });
 });
 
@@ -485,6 +494,163 @@ async function sendDoorbellEvent(visitorId, doorbellId) {
         return sent;
     } catch (error) {
         console.error('Doorbell Error:', error.response?.data || error.message);
+        return false;
+    }
+}
+
+// ====== Send AddOrUpdateReport to Alexa ======
+// إرسال تقرير للإبلاغ عن جرس جديد أو محدث
+async function sendAddOrUpdateReport(visitorId, doorbell) {
+    try {
+        let userData = await getUserData(visitorId);
+        
+        if (!userData?.accessToken) {
+            console.log('❌ No access token for AddOrUpdateReport');
+            return false;
+        }
+        
+        let accessToken = userData.accessToken;
+        
+        // تجديد التوكن إذا لزم الأمر
+        if (userData.refreshToken) {
+            const newToken = await refreshAccessToken(userData.refreshToken);
+            if (newToken) {
+                accessToken = newToken.access_token;
+                await updateUserToken(visitorId, newToken.access_token, newToken.refresh_token);
+            }
+        }
+        
+        const endpoint = {
+            endpointId: doorbell.id,
+            manufacturerName: 'Noor Al-Huda',
+            friendlyName: doorbell.nameEn || doorbell.name,
+            description: (doorbell.name || '') + ' / ' + (doorbell.nameEn || doorbell.name || ''),
+            displayCategories: ['DOORBELL'],
+            capabilities: [
+                {
+                    type: 'AlexaInterface',
+                    interface: 'Alexa.DoorbellEventSource',
+                    version: '3',
+                    proactivelyReported: true
+                },
+                {
+                    type: 'AlexaInterface',
+                    interface: 'Alexa.EndpointHealth',
+                    version: '3',
+                    properties: {
+                        supported: [{ name: 'connectivity' }],
+                        proactivelyReported: true,
+                        retrievable: true
+                    }
+                },
+                {
+                    type: 'AlexaInterface',
+                    interface: 'Alexa',
+                    version: '3'
+                }
+            ],
+            cookie: {
+                nameAr: doorbell.name || '',
+                nameEn: doorbell.nameEn || ''
+            }
+        };
+        
+        const report = {
+            event: {
+                header: {
+                    namespace: 'Alexa.Discovery',
+                    name: 'AddOrUpdateReport',
+                    messageId: 'msg-' + Date.now(),
+                    payloadVersion: '3'
+                },
+                payload: {
+                    endpoints: [endpoint],
+                    scope: {
+                        type: 'BearerToken',
+                        token: accessToken
+                    }
+                }
+            }
+        };
+        
+        console.log('📤 Sending AddOrUpdateReport for:', doorbell.id);
+        
+        const response = await axios.post(
+            'https://api.amazonalexa.com/v3/events',
+            report,
+            {
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': 'Bearer ' + accessToken
+                }
+            }
+        );
+        
+        console.log('✅ AddOrUpdateReport sent successfully:', response.status);
+        return true;
+    } catch (error) {
+        console.error('❌ AddOrUpdateReport Error:', error.response?.data || error.message);
+        return false;
+    }
+}
+
+// ====== Send DeleteReport to Alexa ======
+// إرسال تقرير للإبلاغ عن حذف جرس
+async function sendDeleteReport(visitorId, endpointId) {
+    try {
+        let userData = await getUserData(visitorId);
+        
+        if (!userData?.accessToken) {
+            console.log('❌ No access token for DeleteReport');
+            return false;
+        }
+        
+        let accessToken = userData.accessToken;
+        
+        // تجديد التوكن إذا لزم الأمر
+        if (userData.refreshToken) {
+            const newToken = await refreshAccessToken(userData.refreshToken);
+            if (newToken) {
+                accessToken = newToken.access_token;
+                await updateUserToken(visitorId, newToken.access_token, newToken.refresh_token);
+            }
+        }
+        
+        const report = {
+            event: {
+                header: {
+                    namespace: 'Alexa.Discovery',
+                    name: 'DeleteReport',
+                    messageId: 'msg-' + Date.now(),
+                    payloadVersion: '3'
+                },
+                payload: {
+                    endpoints: [{ endpointId: endpointId }],
+                    scope: {
+                        type: 'BearerToken',
+                        token: accessToken
+                    }
+                }
+            }
+        };
+        
+        console.log('📤 Sending DeleteReport for:', endpointId);
+        
+        const response = await axios.post(
+            'https://api.amazonalexa.com/v3/events',
+            report,
+            {
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': 'Bearer ' + accessToken
+                }
+            }
+        );
+        
+        console.log('✅ DeleteReport sent successfully:', response.status);
+        return true;
+    } catch (error) {
+        console.error('❌ DeleteReport Error:', error.response?.data || error.message);
         return false;
     }
 }
@@ -1149,24 +1315,24 @@ function generateHTML(user, soundsData, doorbells) {
                 
                 <h4 style="color: #e0a346; margin-top: 30px; margin-bottom: 15px;">📋 الجدولات الحالية</h4>
                 
-                <div class="schedule-filters" style="display: flex; gap: 10px; margin-bottom: 15px; flex-wrap: wrap;">
-                    <input type="text" id="schedule-search" placeholder="🔍 بحث..." oninput="filterSchedules()" style="flex: 1; min-width: 150px; padding: 10px 15px; border: none; border-radius: 8px; background: rgba(255,255,255,0.1); color: #fff; font-family: inherit;">
-                    <select id="schedule-filter-doorbell" onchange="filterSchedules()" class="reader-select" style="min-width: 120px;">
-                        <option value="">🔔 كل الأجراس</option>
+                <div class="schedule-filters" style="display: flex; gap: 8px; margin-bottom: 15px; align-items: center;">
+                    <input type="text" id="schedule-search" placeholder="🔍 بحث..." oninput="filterSchedules()" style="width: 140px; padding: 8px 12px; border: none; border-radius: 8px; background: rgba(255,255,255,0.1); color: #fff; font-family: inherit; font-size: 0.9em;">
+                    <select id="schedule-filter-doorbell" onchange="filterSchedules()" style="padding: 8px 10px; border: none; border-radius: 8px; background: rgba(255,255,255,0.1); color: #fff; font-family: inherit; font-size: 0.85em;">
+                        <option value="">🔔 الكل</option>
                     </select>
-                    <select id="schedule-filter-time" onchange="filterSchedules()" class="reader-select" style="min-width: 120px;">
-                        <option value="">⏰ كل الأوقات</option>
+                    <select id="schedule-filter-time" onchange="filterSchedules()" style="padding: 8px 10px; border: none; border-radius: 8px; background: rgba(255,255,255,0.1); color: #fff; font-family: inherit; font-size: 0.85em;">
+                        <option value="">⏰ الكل</option>
                         <option value="manual">يدوي</option>
-                        <option value="prayer">وقت صلاة</option>
-                        <option value="relative">قبل/بعد صلاة</option>
+                        <option value="prayer">صلاة</option>
+                        <option value="relative">نسبي</option>
                     </select>
-                    <select id="schedule-filter-status" onchange="filterSchedules()" class="reader-select" style="min-width: 100px;">
+                    <select id="schedule-filter-status" onchange="filterSchedules()" style="padding: 8px 10px; border: none; border-radius: 8px; background: rgba(255,255,255,0.1); color: #fff; font-family: inherit; font-size: 0.85em;">
                         <option value="">📊 الكل</option>
                         <option value="enabled">مفعّل</option>
                         <option value="disabled">متوقف</option>
                     </select>
+                    <span id="schedule-count" style="color: rgba(255,255,255,0.5); font-size: 0.8em; margin-right: auto;"></span>
                 </div>
-                <div id="schedule-count" style="color: rgba(255,255,255,0.5); font-size: 0.85em; margin-bottom: 10px;"></div>
                 
                 <div id="schedules-list" class="schedules-list"></div>
             </div>
