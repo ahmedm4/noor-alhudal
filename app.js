@@ -393,6 +393,60 @@ app.post('/api/schedules/:id/toggle', async (req, res) => {
     res.json({ success: true, schedules });
 });
 
+// ====== Prayer Location API ======
+app.post('/api/prayer-location', async (req, res) => {
+    const user = req.session.user;
+    if (!user) return res.status(401).json({ error: 'Not authenticated' });
+    
+    const { city, country, cityEn, countryEn, calibration } = req.body;
+    
+    try {
+        const location = JSON.stringify({ city, country, cityEn, countryEn });
+        const calibrationStr = calibration ? JSON.stringify(calibration) : '{}';
+        
+        await dynamoClient.send(new UpdateItemCommand({
+            TableName: config.dynamoTable,
+            Key: { visitorId: { S: user.id } },
+            UpdateExpression: 'SET prayerLocation = :l, prayerCalibration = :c, updatedAt = :u',
+            ExpressionAttributeValues: {
+                ':l': { S: location },
+                ':c': { S: calibrationStr },
+                ':u': { S: new Date().toISOString() }
+            }
+        }));
+        
+        console.log('✅ Prayer location saved for:', user.id.slice(-10));
+        res.json({ success: true });
+    } catch (error) {
+        console.error('Error saving prayer location:', error);
+        res.status(500).json({ error: 'Failed to save' });
+    }
+});
+
+app.post('/api/prayer-calibration', async (req, res) => {
+    const user = req.session.user;
+    if (!user) return res.status(401).json({ error: 'Not authenticated' });
+    
+    const { calibration } = req.body;
+    
+    try {
+        await dynamoClient.send(new UpdateItemCommand({
+            TableName: config.dynamoTable,
+            Key: { visitorId: { S: user.id } },
+            UpdateExpression: 'SET prayerCalibration = :c, updatedAt = :u',
+            ExpressionAttributeValues: {
+                ':c': { S: JSON.stringify(calibration) },
+                ':u': { S: new Date().toISOString() }
+            }
+        }));
+        
+        res.json({ success: true });
+    } catch (error) {
+        console.error('Error saving calibration:', error);
+        res.status(500).json({ error: 'Failed to save' });
+    }
+});
+
 // ====== Send Doorbell Event ======
 // ⚠️ مهم: كل مستخدم يستخدم توكنه الخاص فقط - لا نستخدم توكن مستخدم آخر أبداً!
 async function sendDoorbellEvent(visitorId, doorbellId) {
@@ -1582,6 +1636,10 @@ function generateHTML(user, soundsData, doorbells) {
                 if (data.code === 200 && data.data && data.data.timings) {
                     prayerState.times = data.data.timings;
                     displayPrayerTimes();
+                    
+                    // حفظ إعدادات الموقع في السيرفر للجدولة الديناميكية
+                    await savePrayerLocation(city, country, cityEn, countryEn);
+                    
                     showToast('تم جلب أوقات الصلاة بنجاح', 'success');
                 } else {
                     throw new Error('بيانات غير صحيحة');
@@ -1589,6 +1647,18 @@ function generateHTML(user, soundsData, doorbells) {
             } catch (error) {
                 console.error('Error fetching prayer times:', error);
                 showToast('حدث خطأ في جلب أوقات الصلاة', 'error');
+            }
+        }
+        
+        async function savePrayerLocation(city, country, cityEn, countryEn) {
+            try {
+                await fetch('/api/prayer-location', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ city, country, cityEn, countryEn, calibration: prayerState.calibration })
+                });
+            } catch (e) {
+                console.error('Error saving prayer location:', e);
             }
         }
         
@@ -1635,6 +1705,21 @@ function generateHTML(user, soundsData, doorbells) {
             prayerState.calibration[prayerKey] = (prayerState.calibration[prayerKey] || 0) + delta;
             localStorage.setItem('prayerCalibration', JSON.stringify(prayerState.calibration));
             displayPrayerTimes();
+            
+            // حفظ المعايرة في السيرفر
+            savePrayerCalibration();
+        }
+        
+        async function savePrayerCalibration() {
+            try {
+                await fetch('/api/prayer-calibration', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ calibration: prayerState.calibration })
+                });
+            } catch (e) {
+                console.error('Error saving calibration:', e);
+            }
         }
         
         function getPrayerTime(prayerKey) {
