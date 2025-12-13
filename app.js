@@ -1148,6 +1148,26 @@ function generateHTML(user, soundsData, doorbells) {
                 </div>
                 
                 <h4 style="color: #e0a346; margin-top: 30px; margin-bottom: 15px;">📋 الجدولات الحالية</h4>
+                
+                <div class="schedule-filters" style="display: flex; gap: 10px; margin-bottom: 15px; flex-wrap: wrap;">
+                    <input type="text" id="schedule-search" placeholder="🔍 بحث..." oninput="filterSchedules()" style="flex: 1; min-width: 150px; padding: 10px 15px; border: none; border-radius: 8px; background: rgba(255,255,255,0.1); color: #fff; font-family: inherit;">
+                    <select id="schedule-filter-doorbell" onchange="filterSchedules()" class="reader-select" style="min-width: 120px;">
+                        <option value="">🔔 كل الأجراس</option>
+                    </select>
+                    <select id="schedule-filter-time" onchange="filterSchedules()" class="reader-select" style="min-width: 120px;">
+                        <option value="">⏰ كل الأوقات</option>
+                        <option value="manual">يدوي</option>
+                        <option value="prayer">وقت صلاة</option>
+                        <option value="relative">قبل/بعد صلاة</option>
+                    </select>
+                    <select id="schedule-filter-status" onchange="filterSchedules()" class="reader-select" style="min-width: 100px;">
+                        <option value="">📊 الكل</option>
+                        <option value="enabled">مفعّل</option>
+                        <option value="disabled">متوقف</option>
+                    </select>
+                </div>
+                <div id="schedule-count" style="color: rgba(255,255,255,0.5); font-size: 0.85em; margin-bottom: 10px;"></div>
+                
                 <div id="schedules-list" class="schedules-list"></div>
             </div>
         </div>
@@ -1633,13 +1653,32 @@ function generateHTML(user, soundsData, doorbells) {
         
         function renderSchedulesList() {
             const container = document.getElementById('schedules-list');
+            const countEl = document.getElementById('schedule-count');
             if (!container) return;
+            
+            // تحديث قائمة الأجراس في الفلتر
+            updateScheduleFilterDoorbells();
+            
             if (schedules.length === 0) {
                 container.innerHTML = '<div class="no-schedules">لا توجد جدولات حالياً</div>';
+                if (countEl) countEl.textContent = '';
                 return;
             }
+            
+            // تطبيق الفلترة
+            const filtered = getFilteredSchedules();
+            
+            if (countEl) {
+                countEl.textContent = 'عرض ' + filtered.length + ' من ' + schedules.length + ' جدولة';
+            }
+            
+            if (filtered.length === 0) {
+                container.innerHTML = '<div class="no-schedules" style="opacity: 0.7;">لا توجد نتائج مطابقة للبحث</div>';
+                return;
+            }
+            
             const dayNames = ['الأحد', 'الإثنين', 'الثلاثاء', 'الأربعاء', 'الخميس', 'الجمعة', 'السبت'];
-            container.innerHTML = schedules.map(s => {
+            container.innerHTML = filtered.map(s => {
                 const daysText = s.days.length === 7 ? 'كل يوم' : s.days.map(d => dayNames[d]).join(', ');
                 const timeDisplay = s.prayerName ? '🕌 ' + s.prayerName + ' (' + s.time + ')' : '⏰ ' + s.time;
                 return '<div class="schedule-item" style="opacity: ' + (s.enabled ? '1' : '0.5') + '">' +
@@ -1650,6 +1689,58 @@ function generateHTML(user, soundsData, doorbells) {
                     '<button class="btn btn-secondary" onclick="toggleSchedule(\\'' + s.id + '\\')">' + (s.enabled ? '⏸️' : '▶️') + '</button>' +
                     '<button class="btn btn-danger" onclick="deleteSchedule(\\'' + s.id + '\\')">🗑️</button></div></div>';
             }).join('');
+        }
+        
+        function updateScheduleFilterDoorbells() {
+            const filterDoorbell = document.getElementById('schedule-filter-doorbell');
+            if (!filterDoorbell) return;
+            
+            const currentValue = filterDoorbell.value;
+            filterDoorbell.innerHTML = '<option value="">🔔 كل الأجراس</option>';
+            
+            doorbells.forEach(d => {
+                const opt = document.createElement('option');
+                opt.value = d.id;
+                opt.textContent = d.name;
+                filterDoorbell.appendChild(opt);
+            });
+            
+            filterDoorbell.value = currentValue;
+        }
+        
+        function getFilteredSchedules() {
+            const searchText = (document.getElementById('schedule-search')?.value || '').toLowerCase();
+            const filterDoorbell = document.getElementById('schedule-filter-doorbell')?.value || '';
+            const filterTime = document.getElementById('schedule-filter-time')?.value || '';
+            const filterStatus = document.getElementById('schedule-filter-status')?.value || '';
+            
+            return schedules.filter(s => {
+                // البحث النصي
+                if (searchText) {
+                    const searchFields = [s.duaaName, s.readerName, s.doorbellName, s.time, s.prayerName || ''].join(' ').toLowerCase();
+                    if (!searchFields.includes(searchText)) return false;
+                }
+                
+                // فلتر الجرس
+                if (filterDoorbell && s.doorbellId !== filterDoorbell) return false;
+                
+                // فلتر نوع الوقت
+                if (filterTime) {
+                    if (filterTime === 'manual' && s.timeType !== 'manual') return false;
+                    if (filterTime === 'prayer' && !['fajr', 'dhuhr', 'maghrib'].includes(s.timeType)) return false;
+                    if (filterTime === 'relative' && !s.timeType?.startsWith('relative_')) return false;
+                }
+                
+                // فلتر الحالة
+                if (filterStatus === 'enabled' && !s.enabled) return false;
+                if (filterStatus === 'disabled' && s.enabled) return false;
+                
+                return true;
+            });
+        }
+        
+        function filterSchedules() {
+            renderSchedulesList();
         }
         
         // ===== Prayer Times Data =====
